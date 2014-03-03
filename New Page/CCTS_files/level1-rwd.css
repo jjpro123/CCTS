@@ -1,0 +1,626 @@
+@charset "utf-8";
+/* *********************************************************
+
+
+
+
+***********************************************************/
+
+/* ==================================================================================================== */
+/* ============================================= Containers =========================================== */
+#wrapAllTheThings{
+	background: #E7DBCC url(/_commonImages/PageBuilder/containerBackground.png) center top repeat-x;
+}
+
+  .container {
+    max-width: 970px; /* override bootstraps default 1170 width becasue existing template graphics aren't that wide */
+  }
+
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
+
+/* ==================================================================================================== */
+/* =========================================== Page Sections ========================================== */
+
+/* ======================================= Accessibility Links ======================================== 
+   #accessibilityLinksWrapper
+   -#accessibilityLinks
+   --ul
+*/
+#accessibilityLinksWrapper a{
+	color:#ffffff; 
+	font-size:10px;
+	height:1px; 
+	left:-9999px;
+	position:absolute; 
+	overflow:hidden;
+	width:1px; 
+} 
+#accessibilityLinksWrapper a:active, #accessibilityLinksWrapper a:focus{ 
+	left:0px;
+	position:absolute; 
+	width:auto; 
+	height:auto; 
+}
+
+/* ============================================== Header ============================================== 
+   HTML: div#HeaderWrapper > div#header > div#logo | div#headerResources > div#commonLinks | #searchWrapper
+   
+*/
+
+#headerWrapper{ /* Red band across top. Contains #logo, #search*/
+	background: #7a0711 url(/_commonImages/PageBuilder/headerBackground.jpg) repeat-x center top;
+	z-index:1000;
+	height:108px; /* required for bg to show */
+	box-shadow:0 0 8px #181818;
+	margin-bottom:8px;
+}
+#headerWrapper ul{ /* contains #logo */
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+#header{ /* contains #logo */
+	position:relative;
+	height:70px; /* required for bg to show */
+	padding-left:0;
+	padding-right:0;
+}
+
+
+
+
+
+/* ------------------------ Header Logo ------------------------ */
+
+#header #logo{ 	
+	xz-index:70000;
+	height:80px;
+	padding-left:0;
+	padding-top:25px;
+	z-index:3020;
+
+}
+
+#header #logo a{ 
+	xbackground: url(/_commonImages/PageBuilder/headerLogo.png) no-repeat;
+	display:block;
+	/*height:27px;
+	top:30px;*/
+	overflow:hidden;
+	padding:5px;
+	/*position:absolute;*/
+	
+	/* width:400px; parent element is .col_6 */
+
+}
+#header #logo a span{ 
+	color:#ffffff; font-size:200%;
+	left:-9999px;
+	position:absolute;
+	overflow:hidden;
+}
+/* ------------------------ Header Resources ------------------------ */
+#header #headerResources{
+	position:relative;
+	font-family: 'Lato', sans-serif;
+	font-weight:700;
+	z-index:1001;
+
+}
+#header #commonLinks{ 
+	height: 20px;
+}
+#header #commonLinks ul{ 
+	float: right; /* align the list to the right margin */
+}
+#header #commonLinks ul li{ 
+	float: left; 
+	font-size:10px;
+	padding:4px 0 4px 12px;
+}
+#header #commonLinks ul li a{ 
+	color:#ffffff;
+	text-decoration:none; 
+}
+#header #commonLinks ul li a:hover, 
+#header #commonLinks ul li a:focus{ 
+	text-decoration:underline;
+}
+#header #commonLinks ul .socialMedia{ /* social media links are part of the same ul in #commonlinks */ 
+	padding:1px 0 1px 8px;
+}
+#header #commonLinks .socialMedia a{
+	display:inline-block;
+	height:18px;
+	width:18px;
+}
+#header #commonLinks .socialMedia a span{
+	display:none; /* hide the text */
+}
+#header #commonLinks #facebook a{ background: url(/_commonImages/PageBuilder/commonLinks_Nav_Facebook.png) no-repeat; }
+#header #commonLinks #twitter a{ background: url(/_commonImages/PageBuilder/commonLinks_Nav_Twitter.png) no-repeat; }
+#header #commonLinks #linkedin a{ background: url(/_commonImages/PageBuilder/commonLinks_Nav_LinkedIn.png) no-repeat; }
+#header #commonLinks #youtube a{ background: url(/_commonImages/PageBuilder/commonLinks_Nav_YouTube.png) no-repeat; }
+
+#header #searchWrapper{ 
+	xmargin-top:15px;
+}
+#header #search #q{ /* text box */
+	border-radius: 4px;
+	border:1px solid #736357;
+	height:2.2em;
+	margin-right:0;
+	padding:.1em .2em;
+	width:200px;
+}
+#header #search #sa{ /* submit button */
+	border-radius: 4px;
+	border:1px solid #736357;
+	background:#ffffff;
+	color:#534741;
+	height:2.2em;
+	margin:0px;
+	padding:0;
+	width:72px;
+}
+#header #search #sa:hover{ /* submit button */
+	color: #362f2d;
+	background:#e3d6c6;
+}
+#header #search .unused{ /* search box default style */
+	color: #b8b3b1;
+}
+#header #search .used{ /* search box toggled style */
+	color: #362f2d;
+}
+.gsc-completion-container{ /* makes generated table from search options input appear above the global nav */
+	z-index:3015;
+}
+
+/* ------------------------ Global Navigation ------------------------ */
+
+#headerWrapper #globalNavigation #globalNavigationCollapse{ 
+	padding-left:0;
+	padding-right:0;
+}
+#headerWrapper #globalNavigation .menu{ /* position the .menu */
+	xposition:relative;
+	xtop:12px;
+	z-index:32000;
+	
+}
+#headerWrapper #globalNavigation #topLevel{ /* affects all items */
+	padding-top:5px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /* for sm only*/
+
+	body #headerWrapper #globalNavigation #topLevel li { /* affects all items */
+		font-size: 0.9em;
+	    padding-right: 1.8em;
+	}
+	#header #commonLinks ul .socialMedia{
+		display:none;
+	}
+	
+}
+/* @media screen and (min-width: 768px){ for sm, md and lg */
+
+	#headerWrapper #globalNavigation #topLevel li { /* affects all items */
+		display:inline-block; 
+		font-size:1em;
+		padding-right:2em;
+		padding-left:0;
+		width:auto;
+		/* float:none; [qwe123 */
+		position:inherit /* [qwe123]*/
+	}
+	#headerWrapper #globalNavigation #topLevel li a{ 
+		color:#ffffff;
+		padding:0 4px;
+		z-index:3015;
+	}
+	#headerWrapper #globalNavigation #topLevel li a:hover, #headerWrapper #globalNavigation #topLevel li a:focus{
+		background:#fef4e8; /* [qwe123] */
+		border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;/* [qwe123] */
+		color:#7a0711;
+		text-shadow:0 0 2px #ffffff;
+		text-decoration:none;
+
+	}
+	#headerWrapper #globalNavigation #topLevel li a.hoverAction{  /* when the menu is expanded */
+		background:#fef4e8; /* [qwe123] */
+		border-top-left-radius: 4px; -moz-border-top-left-radius: 4px; -webkit-border-top-left-radius: 4px;/* [qwe123] */
+		border-top-right-radius: 4px; -moz-border-top-right-radius: 4px; -webkit-border-top-right-radius: 4px;/* [qwe123] */
+		border-bottom-left-radius: 0px; -moz-border-bottom-left-radius: 0px; -webkit-border-bottom-left-radius: 0px;/* [qwe123] */
+		border-bottom-right-radius: 0px; -moz-border-bottom-right-radius: 0px; -webkit-border-bottom-right-radius: 0px;/* [qwe123] */
+		color:#7a0711;
+		text-shadow:0 0 2px #ffffff;
+		text-decoration:none;
+
+	}
+	#search{
+		position:absolute; 
+		top:30px; 
+		right:0
+	}
+/* }*/
+
+
+
+
+#headerWrapper #globalNavigation {
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+}
+
+#headerWrapper #globalNavigation #topLevel li h4{ /* global nav headers */ /* replaced with actual links [qwe123] */
+	color:#ffffff;
+	display:block;
+	font-family:'Lato'; /* [qwe123]*/
+	font-size:14px;/* [qwe123] */
+	line-height:14px;/* [qwe123] */
+	/* margin-right:32px; [qwe123]*/
+	margin:0 32px 0 0;
+	position:relative;
+	/*text-transform:uppercase;[qwe123]*/
+	z-index:3905;/* [qwe123] */
+}
+x#headerWrapper #globalNavigation #topLevel li h4:hover,/* [qwe123] */
+x.h4HoverAction { /* [qwe123] */
+	background:url(/_commonImages/PageBuilder/globalNavigation_h4_hover.png) right top no-repeat;
+	cursor:pointer;
+}
+x.h4HoverAction span{ /* [qwe123] */
+	background: url(/_commonImages/PageBuilder/globalNavigation_h4_span_hover.png) left top no-repeat;
+	color:#7a0711;
+}
+.SecondLevelWrapper .h4HoverAction span{/* pretty sure this is uneeded because there are no double h4s[qwe123] */
+	background: none;
+	color:#7a0711;
+}
+#headerWrapper #globalNavigation #topLevel li h4 span {
+	display:block;
+	/* height:12px; [qwe123] */
+	padding:4px 5px 4px 5px;
+}
+#headerWrapper #globalNavigation #topLevel li h4 span:hover, 
+.spanHoverAction {
+	/*background: url(/_commonImages/PageBuilder/globalNavigation_h4_span_hover.png) left top no-repeat; [qwe123] */
+	background:#fef4e8;
+	border-top-left-radius: 4px; -moz-border-top-left-radius: 4px; -webkit-border-top-left-radius: 4px;
+	border-top-right-radius: 4px; -moz-border-top-right-radius: 4px; -webkit-border-top-right-radius: 4px;
+	color:#7a0711;
+	cursor:pointer;
+}
+/*x#headerWrapper #globalNavigation #topLevel li h4 span:hover, */
+.ThirdLevelWrapper .spanHoverAction{
+	background: none;
+	color:#f00;
+}
+
+#headerWrapper #globalNavigation #topLevel .SecondLevelWrapper { /* div that wraps submenus. modified in ie.css */
+	/* background: transparent url(/_commonImages/PageBuilder/globalNavigation_SecondLevelWrapper_background.png) top center no-repeat;[qwe123] */
+	background:none;/* [qwe123] */
+	display: none;
+	float: left;
+	left: -16px; /* default. overridden [?]-jason*/
+	position: absolute;	
+	top: 103px;/* [qwe123] */
+	z-index:3010;
+}
+#headerWrapper #globalNavigation #topLevel .SecondLevel { /*ul that wraps submenus. modified in ie.css */
+	/*background:url(/_commonImages/PageBuilder/globalNavigation_SecondLevel_background.png) bottom center no-repeat;[qwe123] */
+	background:#fef4e8; /* [qwe123] */
+	border: 1px solid #e3d6c6;/* [qwe123] */
+	border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;/* [qwe123] */
+	box-shadow: 0 0 8px 0px rgba(0,0,0,0.5);/* [qwe123] */
+	margin-top:0px;
+	float:left;
+	/*width:944px;  [qwe123] */
+	width:992px;  /* [qwe123] */
+	/*padding:0 16px 8px 16px; [qwe123] */
+	padding:5px;/* [qwe123] */
+}
+#headerWrapper #globalNavigation #topLevel .SecondLevel li,
+#headerWrapper #globalNavigation #topLevel .ThirdLevel li{ /*submenus*/
+	padding-right:0;  /* [qwe123] */
+}
+#headerWrapper #globalNavigation #topLevel .SecondLevelWrapper .SecondLevel li h4 { /* submenus titles */
+	background:none;
+	border-bottom: 1px solid #7a0711;
+	color: #7a0711; /* overrides default h4 behavior */
+	float: none; 
+	/* font-family:Georgia, "Times New Roman", Times, serif;[qwe123] */
+	font-size:16px; /* overrides default h4 behavior */
+	height: auto;
+	line-height:100%;
+	margin: 0; /* overrides default h4 behavior */
+	margin:0 8px 8px 8px;
+	padding:0;
+	text-decoration: none;
+	text-transform:inherit;
+}
+#headerWrapper #globalNavigation #topLevel .SecondLevelWrapper .SecondLevel li h4:hover {
+	background:none;
+	cursor:default;
+}
+#headerWrapper #globalNavigation #topLevel .SecondLevelWrapper .SecondLevel li h4 span{
+	padding:4px 0 4px 0;
+}
+#headerWrapper #globalNavigation #topLevel .SecondLevelWrapper .SecondLevel li h4 span:hover{
+	background:none;
+}
+#headerWrapper #globalNavigation #topLevel .SecondLevelWrapper .SecondLevel li .ThirdLevel li{ 
+	width:100%; /* may be overwritten below to allow for multiple columns */
+	clear:both;
+} 
+
+#headerWrapper #globalNavigation #topLevel .SecondLevelWrapper .SecondLevel li .ThirdLevel li a,
+#headerWrapper #globalNavigation #topLevel .SecondLevelWrapper .SecondLevel li .ThirdLevel li a:visited {/* links in the lists */
+	border-bottom: 1px dotted #c7b299;
+	color: #362f2d;
+	display:block;
+	float: none; 
+	font-size:100%;
+	line-height:100%;
+	padding:8px 0;
+	margin:0 8px;
+	text-decoration: none;
+}
+#headerWrapper #globalNavigation #topLevel .SecondLevelWrapper .SecondLevel li .ThirdLevel li a:hover {
+	background:url(/_commonImages/PageBuilder/globalNavigation_li_hover.png) repeat-x;
+	color: #7a0711;
+}
+
+/* About section */
+#headerWrapper #globalNavigation #Nav_About #Nav_Information{ width:25%; }
+#headerWrapper #globalNavigation #Nav_About #Nav_Administration{ width:25%; }
+#headerWrapper #globalNavigation #Nav_About #Nav_NewsandEvents{ width:25%; }
+#headerWrapper #globalNavigation #Nav_About #Nav_Visit{ width:25%; }
+
+#headerWrapper #globalNavigation #Nav_About #Nav_AboutSeattleUniversity .ThirdLevel li{ width:50%; }
+#headerWrapper #globalNavigation #Nav_About #Nav_Visitors .ThirdLevel li{ width:100%; }
+
+/* Admissions section */
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_UndergraduateAdmissions { width:250px; }
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_GraduateAdmissions{ width:200px; }
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_SchoolofLaw{ width:170px; }
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Finances{ width:180px; }
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons{ width:130px; }
+
+
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_ApplyNow, #headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_RequestUndergraduateInformation, #headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_RequestGraduateInformation, #headerWrapper #globalNavigation #Nav_Admission #Nav_Buttons #Nav_RequestInformationforLawSchool{ 
+	display:block; 
+	height: 55px;
+}
+
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_ApplyNow a,
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_RequestUndergraduateInformation a,
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_RequestGraduateInformation a,
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_RequestInformationforLawSchool a{ 
+	border-bottom:none;
+	height:54px;
+}
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_ApplyNow a:hover,
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_RequestUndergraduateInformation a:hover,
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_RequestGraduateInformation a:hover,
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_RequestInformationforLawSchool a:hover{ 
+	background:none;
+}
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_ApplyNow a span,
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_RequestUndergraduateInformation a span,
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_RequestGraduateInformation a span,
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_RequestInformationforLawSchool a span{
+	position:absolute; 
+	left:-9999px;
+}
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_Buttons_h4{ display:none; }
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_ApplyNow{ 
+	background: url(/_commonImages/PageBuilder/globalNavigation_Nav_Information_NavApplyNow_background.png) no-repeat;
+}
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_RequestUndergraduateInformation{ 
+	background: url(/_commonImages/PageBuilder/globalNavigation_Nav_Information_Nav_RequestUndergraduateInformation_background.png) no-repeat;
+}
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_RequestGraduateInformation{ 
+	background: url(/_commonImages/PageBuilder/globalNavigation_Nav_Information_Nav_RequestGraduateInformation_background.png) no-repeat;
+}
+#headerWrapper #globalNavigation #Nav_Admissions #Nav_Buttons #Nav_RequestInformationforLawSchool{ 
+	background: url(/_commonImages/PageBuilder/globalNavigation_Nav_Information_Nav_RequestLawInformation_background.png) no-repeat;
+}
+
+/* end navbuttons */
+
+#headerWrapper #globalNavigation #Nav_Academics #Nav_SchoolsandColleges{ width:25%; }
+#headerWrapper #globalNavigation #Nav_Academics #Nav_Programs{ width:25%; }
+#headerWrapper #globalNavigation #Nav_Academics #Nav_OnlineTools{ width:25%; }
+#headerWrapper #globalNavigation #Nav_Academics #Nav_Resources{ width:25%; }
+
+/* Student Life section */
+#headerWrapper #globalNavigation #Nav_StudentLife #Nav_Services{ width:20%; }
+#headerWrapper #globalNavigation #Nav_StudentLife #Nav_Housing{ width:20%; }
+#headerWrapper #globalNavigation #Nav_StudentLife #Nav_OnlineTools{ width:20%; }
+#headerWrapper #globalNavigation #Nav_StudentLife #Nav_AcademicTools{ width:20%; }
+#headerWrapper #globalNavigation #Nav_StudentLife #Nav_GetInvolved{ width:20%; }
+
+/* Jesuit Tradition: Faith and Spirituality, Jesuit Education */
+#headerWrapper #globalNavigation #Nav_JesuitTradition #Nav_FaithandSpirituality{ width:55%; }
+#headerWrapper #globalNavigation #Nav_JesuitTradition #Nav_JesuitEducation{ width:45%; }
+
+/* Athletic section */
+#headerWrapper #globalNavigation #Nav_Athletics li.firstItem{ width:20%; }/*temp*/
+#headerWrapper #globalNavigation #Nav_Athletics li.subsequentItem{ width:20%; }/*temp*/
+#headerWrapper #globalNavigation #Nav_Athletics #Nav_MensSports{ width:20%; }
+#headerWrapper #globalNavigation #Nav_Athletics #Nav_WomensSports{ width:20%; }
+#headerWrapper #globalNavigation #Nav_Athletics #Nav_IntercollegiateAthletics{ width:35%; }
+#headerWrapper #globalNavigation #Nav_Athletics #Nav_Recreation{ width:25%; }
+
+/* Faculty + Staff section */
+#headerWrapper #globalNavigation #Nav_FacultyandStaff #Nav_WorkingatSU{ width:25%; }
+#headerWrapper #globalNavigation #Nav_FacultyandStaff #Nav_OnlineTools{ width:25%; }
+#headerWrapper #globalNavigation #Nav_FacultyandStaff #Nav_CampusServices{ width:25%; }
+#headerWrapper #globalNavigation #Nav_FacultyandStaff #Nav_FacultySupportServices{ width:25%; }
+
+/* Give Link */
+#headerWrapper #globalNavigation #Nav_Give_link{ 
+	xcolor:#fff5e9;
+	xdisplay:block;
+	/* font-family:arial;*/
+	xfont-size:12px;
+	xline-height:12px;
+	xmargin-right:0 ;
+	xposition:relative;
+	xtext-decoration:none;
+	xz-index:3005;
+}
+#headerWrapper #globalNavigation #Nav_Give_link span {
+	xdisplay:block;
+	xheight:12px;
+	xpadding:4px 5px 4px 5px;
+}
+
+
+
+
+/* ============================================== Footer ==============================================*/
+/*   #footerWrapper > structuralSubElement > footer > .seattleu | .unit  */
+
+#footerWrapper{ 
+	background: #7a0711; /* For IE8 */
+	background: -webkit-radial-gradient(#cd0c1f, #7a0711); /* Safari */
+	background: -o-radial-gradient(#cd0c1f, #7a0711); /* For Opera 11.1 to 12.0 */
+	background: -moz-radial-gradient(#cd0c1f, #7a0711); /* For Firefox 3.6 to 15 */
+	background: radial-gradient(#cd0c1f, #7a0711); /* Standard syntax */
+	border-top:1px solid  #ffffff;
+	box-shadow:0 0 5px 0 #333333;
+	color: #ffffff; 
+	height:124px; 
+	position:relative;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) { /* webkit hack to fix 1px offset */
+	#footerWrapper { 
+ 		background-position: 49.999% bottom; 
+	}
+}
+
+#footer{ 
+	color: #ffffff; 
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:.9em;
+	height:93px;
+	line-height:120%; 
+	padding:16px 0 0 0;
+}
+#footer .content{ 
+	color: #ffffff; 
+}
+#footer a{
+	color: #ffffff; 
+	text-decoration:underline;
+}
+#footer a:hover{
+	color: #E3D6C6;
+}
+#footer .org{ /* affects name in .seattleu and .unit */
+	font-weight:bold; /* makes organization name bold */
+}
+#footer address{ 
+	margin-bottom:0; /* overrides a style in the bootstrap CSS*/
+} /* affects name in .seattleu and .unit */
+
+#footer .unit{
+	text-align:right;
+}
+.footer-logo-container 
+{
+	text-align:center;
+}
+
+#footerCopyrightAndLinksWrapper{ 
+	background:#534741;
+	color:#362F2D;
+	font-size:10px;
+}
+#footerCopyrightAndLinksInner{
+	background:#998675;
+	padding:4px 0 2px 0; /* 142px makes the homepage footer blend with the #navigationList. was 200px */
+}
+
+#footerCopyrightAndLinksWrapper a,
+#footerCopyrightAndLinksWrapper a:visited{ 
+	color:#362F2D;
+	text-decoration:underline;
+}
+#footerCopyrightAndLinksWrapper a:focus,
+#footerCopyrightAndLinksWrapper a:hover{ 
+	color:#7a0711;
+}
+
+#footerCopyrightAndLinksWrapper #footerCopyright{ 
+	text-align:center;	
+}
+#footerCopyrightAndLinksWrapper #footerFeedback{ 
+	text-align:right;	
+}
+@media (max-width: 767px) { 
+  #footerCopyrightAndLinksWrapper #footerCopyright{
+    text-align:left;
+  }
+}
+
+/* =========================== Status Alert =========================== */
+
+#status_alert{
+	background:#f77f20 url(/_commonImages/PageBuilder/statusBackground.png) bottom center;
+	padding:24px 0 32px 0;
+}
+#status_alert.green{
+	background: #090 url(/_commonImages/PageBuilder/statusBackgroundGreen.png) bottom center;
+}
+#status_alert #announcement{
+	color:#ffffff;
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+}
+#status_alert #announcement h1{	
+	border-top:4px solid white;
+	font-family: 'Lato', sans-serif;
+	font-weight:900;
+	font-size:2em;
+	margin:0 0 15px 0;
+	text-transform:uppercase;
+	xtext-shadow:#723300 0px 0px 1px;
+}
+#status_alert #announcement h1 a, #status_alert #announcement h1 a:visited{
+	text-decoration:none;
+}
+#status_alert #announcement p,
+#status_alert #announcement .morelink{
+	font-size:1.2em;
+	line-height:1.5em;
+}
+#status_alert #announcement a, #status_alert #announcement a:visited{
+	text-decoration:underline;
+	color:#ffffff;
+}
+
+
+
+
+
+
+#footer div.PBViewing{ /* override ektron pagebuilder styles */
+	float:none;	
+}
+body a:link, body span.MsoHyperlink{ /* override MSWord copy-ins */
+	text-decoration:none;
+}/*----------------------footer*------------------------*/
+
+  
+  

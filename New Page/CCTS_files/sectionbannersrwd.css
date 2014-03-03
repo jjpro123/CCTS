@@ -1,0 +1,637 @@
+@charset "utf-8";
+/* *********************************************************
+sectionbanner.css
+For each custom sectionBanner
+
+Created August 2011
+
+Update 9/14/12 by Jason
+-transparent bg on #sectionBannerText goes 16px after text, not all the way across
+Update 10/25/12 by Jason
+-Styles for pagebanners combined, change background-image only, alphabetized
+Update 1/14/13 by Jason
+-All styles for pagebanners combined; alphatransparent background moved to level3.css
+
+***********************************************************/
+
+
+/* -----===== Academic Affairs =====----- */
+.academicaffairs #sectionLandingBannerSecondWrapper, .academicaffairs  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-academicaffairs.jpg) !important; 
+}
+/* -----===== Accepted Students =====----- */
+.accepted #sectionLandingBannerSecondWrapper, .accepted #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-accepted.jpg) !important; 
+}
+/* -----===== Admissions: Undergraduate  =====----- */
+.undergraduate-admissions #sectionLandingBannerSecondWrapper, .undergraduate-admissions  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-admissions-undergrad.jpg) !important; 
+}
+/* -----===== Admissions: Graduate =====----- */
+.graduate-admissions #sectionLandingBannerSecondWrapper, .graduate-admissions  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-admissions-grad.jpg) !important; 
+}
+/* -----===== Advancement Services =====----- */
+.advancement-services #sectionLandingBannerSecondWrapper, .advancement-services  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-advancementServices.jpg) !important; 
+}
+/* -----===== Advising =====----- */
+.advising2 #sectionLandingBannerSecondWrapper, .advising #sectionLandingBannerSecondWrapper, .advising #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-advising.jpg) !important; 
+}
+/* -----===== Alert =====----- */
+/* background for sectiontitle is removed */
+.alert #sectionLandingBannerSecondWrapper, .alert  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-alert.jpg) !important; 
+}
+.alert #sectionLandingBannerSecondWrapper .sectionAncestor{
+	display:none; 
+}
+.alert #sectionLandingBannerSecondWrapper .sectionTitle{
+	position:relative;
+	top: -50px;
+}
+/* -----===== Alumni =====----- */
+.alumni #sectionLandingBannerSecondWrapper, .alumni  #sectionBannerSecondWrapper{ 
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-alumni2.jpg) !important; 
+}
+/* -----===== Alumni: SU Voice =====----- */
+.alumni_suvoice #sectionLandingBannerSecondWrapper, .alumni_suvoice  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-suvoice.jpg) !important; }
+.alumni_suvoice .sectionBannerText{	left: -9999px; /*This moves the text off the banner since it is part of the graphic */ 
+}
+/* -----===== Boeing LTP =====----- */
+.boeing #sectionLandingBannerSecondWrapper, .boeing  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-boeingltp.jpg) !important; 
+}
+/* -----===== Campus Ministry =====----- */
+.campus-ministry #sectionLandingBannerSecondWrapper, .campus-ministry #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-campus-ministry.jpg) !important; 
+}
+/* -----===== CAPS =====----- */
+.caps #sectionLandingBannerSecondWrapper, .caps  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-caps.jpg) !important; 
+}
+/* -----===== Career Services =====----- */
+.careerservices #sectionLandingBannerSecondWrapper, .careerservices  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-careerservicesb.jpg) !important; 
+}
+/* -----===== CEJS =====----- */
+.cejs #sectionLandingBannerSecondWrapper, .cejs  #sectionBannerSecondWrapper{ 
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-cejs3.jpg) !important; 
+}
+/* -----===== Center for Service and Community Engagement =====-----  */
+.csce #sectionLandingBannerSecondWrapper, .csce  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-csce.jpg) !important; 
+}
+/* -----===== Chapel of St. Ignatius =====----- */
+.chapel #sectionLandingBannerSecondWrapper, .chapel #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-chapel.jpg) !important; 
+}
+/* -----===== Chaplain for Faculty and Staff =====----- */
+.chaplain #sectionLandingBannerSecondWrapper, .chaplain #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-chaplain.jpg) !important; 
+}
+/* -----===== CMS Training =====----- */
+.cmstraining #sectionLandingBannerSecondWrapper, .cmstraining  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-cmstraining.jpg) !important; 
+}
+/* -----===== Commencement =====----- */
+.commencement #sectionLandingBannerSecondWrapper, .commencement  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-commencement.jpg) !important; 
+}
+/* -----===== Commuter & Transfer Student Life =====----- */
+.ctsl #sectionLandingBannerSecondWrapper, .ctsl  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-ctsl.jpg) !important; 
+}
+/* -----===== Continuing, Online and Professional Education =====----- */
+.cope #sectionLandingBannerSecondWrapper, .cope  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-copebanner.jpg) !important; 
+}
+/* -----===== CORE =====----- */
+.core #sectionLandingBannerSecondWrapper, .core #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-core.jpg) !important; 
+}
+/* -----===== Costs =====----- */
+.costs #sectionLandingBannerSecondWrapper, .costs #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-sfs.jpg) !important; 
+}
+/* -----===== CSJS =====----- */
+.csjs #sectionLandingBannerSecondWrapper, .csjs  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-csjs.jpg) !important; 
+}
+/* -----===== Dean of Students =====----- */
+.deanofstudents #sectionLandingBannerSecondWrapper, .deanofstudents  #sectionBannerSecondWrapper,
+.integrity-formation #sectionLandingBannerSecondWrapper, .integrity-formation  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-integrityformation.jpg) !important; 
+}
+/* -----===== Environmental Health and Safety =====----- */
+.environmental #sectionLandingBannerSecondWrapper, .environmental  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-environmentalhealth.jpg) !important; 
+}
+/* -----===== Facilities Services =====----- */
+.facilities #sectionLandingBannerSecondWrapper, .facilities  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-facilities.jpg) !important; 
+}
+/* -----===== Faculty Development =====----- */
+.faculty-development #sectionLandingBannerSecondWrapper, .faculty-development #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-faculty-development.jpg) !important; 
+}
+/* -----=====  Fostering Scholars =====----- */
+.fosteringscholars #sectionLandingBannerSecondWrapper, .fosteringscholars #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-fosteringscholars.jpg) !important; 
+}
+.fosteringscholars .sectionBannerText{	left: -9999px; /*This moves the text off the banner since it is part of the graphic */ }
+/* -----===== Finance and Business Affairs, Controller, Budget Office =====----- */
+.finance-and-business-affairs #sectionLandingBannerSecondWrapper, .finance-and-business-affairs #sectionBannerSecondWrapper,
+.controllers-office #sectionLandingBannerSecondWrapper, .controllers-office #sectionBannerSecondWrapper,
+.university-budget-office #sectionLandingBannerSecondWrapper, .university-budget-office #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-finance.png) !important; 
+}
+/* -----===== Financial Aid =====----- */
+.financial-aid #sectionLandingBannerSecondWrapper, .financial-aid #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-sfs.jpg) !important; 
+}
+/* -----===== Giving =====----- */
+.giving #sectionLandingBannerSecondWrapper, .giving  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-giving2.jpg) !important; 
+}
+/* -----===== Global Engagement -------- */
+.global #sectionLandingBannerSecondWrapper, .global  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-global-engagement.jpg) !important; 
+}
+/* -----===== Grounds =====----- */
+.grounds #sectionLandingBannerSecondWrapper, .grounds  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-grounds-landscaping.jpg) !important; 
+}
+/* -----===== Graduate Student Council =====----- */
+.gsc #sectionLandingBannerSecondWrapper, .gsc  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-gsc.jpg) !important; 
+}
+/* -----===== Homecoming =====----- */
+.homecoming #sectionLandingBannerSecondWrapper, .homecoming  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-alumni.jpg) !important; 
+}
+/* -----===== Housing and Residence Life =====----- */
+.housing #sectionLandingBannerSecondWrapper, .housing  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-housing.jpg) !important; 
+}
+/* -----===== Institute for Catholic Thought and Culture  =====----- */
+.ictc #sectionLandingBannerSecondWrapper, .ictc  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-ictc.jpg) !important; 
+}
+.ictc .sectionBannerText{	left: -9999px; /*This moves the text off the banner since it is part of the graphic */ 
+}
+
+/* -----===== International Student Center =====----- */
+.isc #sectionLandingBannerSecondWrapper, .isc  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-isc.jpg) !important; 
+}
+/* -----===== Jesuit Mission and Identity =====----- */
+.jesuit-mission #sectionLandingBannerSecondWrapper, .jesuit-mission #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-Jesuit-mission.jpg) !important; 
+}
+/* -----===== Leadership Development =====----- */
+.leadership2 #sectionLandingBannerSecondWrapper, .leadership #sectionLandingBannerSecondWrapper, .leadership  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-leadership.jpg) !important; 
+}
+/* -----===== Library and Learning Commons =====----- */
+.library #sectionLandingBannerSecondWrapper, .library #sectionBannerSecondWrapper,
+.learningcommons #sectionLandingBannerSecondWrapper, .learningcommons  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-library.jpg) !important; }
+.library #sectionLandingBannerSecondWrapper .sectionAncestor, .library #sectionBannerSecondWrapper .sectionAncestor, 
+.learningcommons #sectionLandingBannerSecondWrapper .sectionAncestor, .learningcommons #sectionBannerSecondWrapper .sectionAncestor{ 
+	font-size:18px; /* change font to fit */
+}
+/* -----===== Living Learning Communities =====----- */
+.llcs #sectionLandingBannerSecondWrapper, .llcs  #sectionBannerSecondWrapper,
+.lcs #sectionLandingBannerSecondWrapper, .lcs  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-llcs.jpg) !important; 
+}
+/* -----===== Login =====----- */
+.login #sectionLandingBannerSecondWrapper, .login  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-ektron87sp1.jpg) !important; 
+}
+/* -----===== Magis =====----- */
+.magis #sectionLandingBannerSecondWrapper, .magis #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-magis.jpg) !important; 
+}
+/* -----===== Marketing Communications =====----- */
+.marcom #sectionLandingBannerSecondWrapper, .marcom  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-marcom.jpg) !important; 
+}
+/* -----===== Matteo Ricci College  =====----- */
+.matteo-ricci #sectionLandingBannerSecondWrapper, .matteo-ricci #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-matteo-ricci2.jpg) !important; 
+}
+/* -----===== Mission and Ministry =====----- */
+.missionministry #sectionLandingBannerSecondWrapper, .missionministry #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-missionministry.jpg) !important; 
+}
+/* -----===== MySU =====----- */
+x.mysu #sectionLandingBannerSecondWrapper, x.mysu  #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-mysu.jpg) !important; 
+}
+x.mysu .sectionBannerText{ left: -9999px; /*This moves the banner text off the page*/ }
+/* -----===== New Student and Family Programs =====----- */
+.newstudent #sectionLandingBannerSecondWrapper, .newstudent  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-newstudent.jpg) !important; 
+}
+/* -----===== NFI =====-----  */
+.nfi #sectionLandingBannerSecondWrapper, .nfi  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-nfi.jpg) !important; 
+}
+/* -----===== Office of Multicultural Affairs =====----- */
+.oma #sectionLandingBannerSecondWrapper, .oma  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-oma.jpg) !important; 
+}
+/* -----===== Operations and Maintenance =====----- */
+.operations #sectionLandingBannerSecondWrapper, .operations #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-operations.jpg) !important; 
+}
+/* -----===== ORSSP =====----- */
+.orssp #sectionLandingBannerSecondWrapper, .orssp  #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-orssp2.jpg) !important; 
+}
+/* -----===== Poverty Education Center =====----- */
+.poverty-education #sectionLandingBannerSecondWrapper, .poverty-education #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-matteo-ricci2.jpg) !important; 
+}
+/* -----===== Provost =====----- */
+.provost #sectionLandingBannerSecondWrapper, .provost  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-provost.jpg) !important; 
+}
+/* -----===== President =====----- */
+.president #sectionLandingBannerSecondWrapper, .president  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-president.jpg) !important; 
+}
+/* -----===== Purchasing and Support Services =====----- */
+.purchasing #sectionLandingBannerSecondWrapper, .purchasing  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-purchasing.jpg) !important; 
+}
+/* -----===== PWOB - Professionals WithOut Boundaries =====----- */
+/* Retired banner system */
+.pwob #sectionLandingBannerSecondWrapper, .pwob #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-pwob.jpg) !important; 
+}
+/* -----===== Red Tie =====----- */
+.redtie #sectionLandingBannerSecondWrapper, .redtie  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-redtie.jpg) !important; 
+}/* Removed on 2/3/14 by Eli Voigt
+.redtie .sectionBannerText{	left: -9999px; /*This moves the text off the banner since it is part of the graphic */ 
+.redtie .sectionBannerText {
+	background: none;
+	filter: none; /* IE */	
+}
+/* -----===== Public Safety =====----- */
+.safety #sectionLandingBannerSecondWrapper, .safety  #sectionBannerSecondWrapper, .safety2 #sectionLandingBannerSecondWrapper, .safety2  #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-safety.jpg) !important; 
+}
+/* -----===== Registrar and Operations =====----- */
+.registrar #sectionLandingBannerSecondWrapper, .registrar  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-registrar.jpg) !important; 
+}
+/* -----===== Research =====----- */
+.research #sectionLandingBannerSecondWrapper, .research #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-research.jpg) !important; 
+}
+/* -----===== Residental Housing Association =====----- */
+.rha #sectionLandingBannerSecondWrapper, .rha  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-rha.jpg) !important; 
+}
+/* -----===== Sojourn  =====----- */
+.sojourn #sectionLandingBannerSecondWrapper, .sojourn #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-sojourn.jpg) !important; 
+}
+/* -----===== St. Ignatius Medal =====----- */
+.stignatiusmedal #sectionLandingBannerSecondWrapper, .stignatiusmedal  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-stignatiusmedal.jpg) !important; 
+}
+/* -----===== Student Development =====----- */
+.studentdevelopment #sectionLandingBannerSecondWrapper, .studentdevelopment  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-studentdevelopment.jpg) !important; 
+}
+/* -----===== Student Events & Activities Council =====----- */
+.seac #sectionLandingBannerSecondWrapper, .seac  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-seac.jpg) !important; 
+}
+/* -----===== Student Financial Services =====----- */
+.sfs #sectionLandingBannerSecondWrapper, .sfs #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-sfs.jpg) !important; 
+}
+/* -----===== Student Activities =====----- */
+.activities2 #sectionLandingBannerSecondWrapper, .activities #sectionLandingBannerSecondWrapper, .activities  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-activities.jpg) !important; 
+}
+/* -----===== Student Government =====----- */
+.sgsu2 #sectionLandingBannerSecondWrapper, .sgsu #sectionLandingBannerSecondWrapper, .sgsu  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-sgsu.jpg) !important; 
+}
+/* -----===== Student Health Center =====----- */
+.student-health #sectionLandingBannerSecondWrapper, .student-health  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-student-health.jpg) !important; 
+}
+/* -----===== Student Payment =====----- */
+.student-payment #sectionLandingBannerSecondWrapper, .student-payment #sectionBannerSecondWrapper{
+	background-image:  url(/_commonImages/sectionBanners/sectionBannerBackground-sfs.jpg) !important; 
+}
+/* -----===== Summer =====----- */
+.summer #sectionLandingBannerSecondWrapper, .summer  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-summer.jpg) !important; 
+
+/* Removed on 1/30/14 by Eli Voigt
+.summer .sectionBannerText{	left: -9999px; /*This moves the text off the banner since it is part of the graphic */ 
+
+}
+/* -----===== STM =====----- */
+.stm #sectionLandingBannerSecondWrapper, .stm  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-stm.jpg) !important; 
+}
+/* -----===== Search for Meaning =====----- */
+.searchformeaning #sectionLandingBannerSecondWrapper, .searchformeaning  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-searchformeaning.jpg) !important; 
+}
+/* -----===== Sustainability =====----- */
+.sustainability #sectionLandingBannerSecondWrapper, .sustainability  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-sustainability.jpg) !important; 
+}
+/* -----===== Transportation and Parking Services =====----- */
+.transportation #sectionLandingBannerSecondWrapper, .transportation #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-transportation.jpg) !important; 
+}
+/* -----===== University Recreation =====----- */
+.recreation #sectionLandingBannerSecondWrapper, .recreation  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-recreation.jpg) !important; 
+}
+/* -----===== Veterans =====----- */
+.veterans #sectionLandingBannerSecondWrapper, .veterans  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-veterans.jpg) !important; 
+}
+/* -----===== Web =====----- */
+.web #sectionLandingBannerSecondWrapper, .web  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-ektron87sp1.jpg) !important; 
+}
+/* -----===== Wellness and Health Promotion =====----- */
+.wellness #sectionLandingBannerSecondWrapper, .wellness  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-wellness.jpg) !important; 
+}
+/* -----===== WRRCEA Conference =====----- */
+.wrrcea #sectionLandingBannerSecondWrapper, .wrrcea  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-wrrcea.jpg) !important; 
+}
+.wrrcea #sectionLandingBannerSecondWrapper .sectionTitle, .wrrcea #sectionBannerSecondWrapper .sectionTitle{ 
+	font-size:26px; /* change font to fit */
+}
+/* -----===== Youth Initiative =====-----  */
+.suyi #sectionLandingBannerSecondWrapper, .suyi  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-suyi.jpg) !important; 
+}
+
+
+
+
+/* -----===== Arts and Sciences =====----- */
+/* definitions with an x preceing them use the standard artsci banner */
+.artsci #sectionLandingBannerSecondWrapper, .artsci  #sectionBannerSecondWrapper{ 
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+/* degrees */
+.artsci_art-history #sectionLandingBannerSecondWrapper, .artsci_art-history #sectionBannerSecondWrapper{ /* Art History */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-arthistory.jpg) !important; 
+}
+.artsci_asian #sectionLandingBannerSecondWrapper, .artsci_asian  #sectionBannerSecondWrapper{ /* Asian Studies */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-asian.jpg) !important; 
+}
+.artsci_catholic #sectionLandingBannerSecondWrapper, .artsci_catholic #sectionBannerSecondWrapper{ /* Catholic Studies */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-catholic.jpg) !important; 
+}
+.artsci_chinese #sectionLandingBannerSecondWrapper, .artsci_chinese #sectionBannerSecondWrapper{ /* Chinese */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-chinese.jpg) !important; 
+}
+/*x*/ .artsci_communication2 #sectionLandingBannerSecondWrapper, .artsci_communication #sectionLandingBannerSecondWrapper, .artsci_communication  #sectionBannerSecondWrapper{/* Communication */ 
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+.artsci_criminal #sectionLandingBannerSecondWrapper, .artsci_criminal #sectionBannerSecondWrapper{ /* Criminal Justice */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-criminal-justice.jpg) !important; 
+}
+.artsci_anthropology #sectionLandingBannerSecondWrapper, .artsci_anthropology  #sectionBannerSecondWrapper{ /* Cultural Anthropology */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-anthropology.jpg) !important; 
+}
+.artsci_digital-design #sectionLandingBannerSecondWrapper, .artsci_digital-design #sectionLandingBannerSecondWrapper, .artsci_digital-design #sectionBannerSecondWrapper{ /* Digital Design */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-design.jpg) !important; 
+}
+.artsci_english #sectionLandingBannerSecondWrapper, .artsci_english #sectionBannerSecondWrapper{ /* English */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-english.jpg) !important; 
+}
+.artsci_environmental2 #sectionLandingBannerSecondWrapper, .artsci_environmental #sectionLandingBannerSecondWrapper, .artsci_environmental #sectionBannerSecondWrapper{ /* Environmental Studies */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-environmental.jpg) !important; 
+}
+.artsci_film #sectionLandingBannerSecondWrapper, .artsci_film #sectionBannerSecondWrapper{ /* Film Studies */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-film.jpg) !important; 
+}
+.artsci_french #sectionLandingBannerSecondWrapper, .artsci_french #sectionBannerSecondWrapper{  /* French */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-french.jpg) !important; 
+}
+.artsci_african #sectionLandingBannerSecondWrapper, .artsci_african  #sectionBannerSecondWrapper{ /* Global African Studies*/
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-african.jpg) !important; 
+}
+.artsci_history #sectionLandingBannerSecondWrapper, .artsci_history #sectionBannerSecondWrapper{ /* history */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-history.jpg) !important; 
+}
+.artsci_international #sectionLandingBannerSecondWrapper, .artsci_international #sectionBannerSecondWrapper{ /* International Studies */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-internationalStudies.jpg) !important; 
+}
+.artsci_italian #sectionLandingBannerSecondWrapper, .artsci_italian #sectionBannerSecondWrapper{ /* Italian */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-italian.jpg) !important; 
+}
+/*x*/.artsci_japanese #sectionLandingBannerSecondWrapper, .artsci_japanese #sectionBannerSecondWrapper{ /* Japanese */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+/*x*/.artsci_journalism #sectionLandingBannerSecondWrapper, .artsci_journalism #sectionBannerSecondWrapper{ /* Journalism */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+/*x*/.artsci_latinamerican #sectionLandingBannerSecondWrapper, .artsci_latinamerican #sectionBannerSecondWrapper{ /* Latin American Studies */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+.artsci_liberal2 #sectionLandingBannerSecondWrapper, .artsci_liberal #sectionLandingBannerSecondWrapper, .artsci_liberal #sectionBannerSecondWrapper{ 
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-liberal.jpg) !important; 
+}
+/*x*/.artsci_medieval #sectionLandingBannerSecondWrapper, .artsci_medieval #sectionBannerSecondWrapper{ /* Medieval Studies */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+.artsci_music #sectionLandingBannerSecondWrapper, .artsci_music #sectionBannerSecondWrapper{ /* Music */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-music.jpg) !important; 
+}
+/*x*/.artsci_nonprofit-leadership #sectionLandingBannerSecondWrapper, .artsci_nonprofit-leadership #sectionBannerSecondWrapper{ /* Nonprofit Leadership */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+.artsci_philosophy2 #sectionLandingBannerSecondWrapper, .artsci_philosophy #sectionLandingBannerSecondWrapper, .artsci_philosophy #sectionBannerSecondWrapper{ /* Philosophy */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-philosophy.jpg) !important; 
+}
+.artsci_photography #sectionLandingBannerSecondWrapper, .artsci_photography #sectionBannerSecondWrapper{ 
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-photography.jpg) !important; 
+}
+/*x*/.artsci_political-science #sectionLandingBannerSecondWrapper, .artsci_political-science #sectionBannerSecondWrapper{ /* Political Science */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+/*x*/ .artsci_psychology #sectionLandingBannerSecondWrapper, .artsci_psychology #sectionBannerSecondWrapper{ /* Psychology */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+.artsci_public-affairs2 #sectionLandingBannerSecondWrapper, .artsci_public-affairs #sectionLandingBannerSecondWrapper, .artsci_public-affairs #sectionBannerSecondWrapper{ 
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; /* Public Affairs */
+}
+.artsci_social-work #sectionLandingBannerSecondWrapper, .artsci_social-work #sectionBannerSecondWrapper{ /* social work */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-socialwork.jpg) !important; 
+}
+/*x*/.artsci_sociology2 #sectionLandingBannerSecondWrapper, .artsci_sociology #sectionLandingBannerSecondWrapper, .artsci_sociology #sectionBannerSecondWrapper{ /* Sociology */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+.artsci_spanish #sectionLandingBannerSecondWrapper, .artsci_spanish #sectionBannerSecondWrapper{  /* spanish */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-spanish.jpg) !important; 
+}
+/*x*/.artsci_sport-exercise #sectionLandingBannerSecondWrapper, .artsci_sport-exercise #sectionBannerSecondWrapper{ /* Sport and Exercise Science */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+/*x*/.artsci_strategic-communications #sectionLandingBannerSecondWrapper, .artsci_strategic-communications #sectionBannerSecondWrapper{ /* Strategic Communications */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+.artsci_string-performance #sectionLandingBannerSecondWrapper, .artsci_string-performance #sectionBannerSecondWrapper{ /* String Performance */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-stringPerformance.jpg) !important; 
+}
+.artsci_theatre #sectionLandingBannerSecondWrapper, .artsci_theatre #sectionBannerSecondWrapper{ /* Theatre */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-theatre.jpg) !important; 
+}
+.artsci_theology #sectionLandingBannerSecondWrapper, .artsci_theology #sectionBannerSecondWrapper{ /* Theology & Religious Studies */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-theology.jpg) !important; 
+}
+/*x*/.artsci_visual #sectionLandingBannerSecondWrapper, .artsci_visual #sectionBannerSecondWrapper{ /* Visual Arts */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+.artsci_women-gender #sectionLandingBannerSecondWrapper, .artsci_women-gender #sectionBannerSecondWrapper{ /* Women and Gender Studies */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-womenGenderStudies.jpg) !important; 
+}
+
+/* Grad Degrees */
+.artsci_criminal-graduate #sectionLandingBannerSecondWrapper, .artsci_criminal-graduate #sectionBannerSecondWrapper, .artsci_macj #sectionLandingBannerSecondWrapper, .artsci_macj #sectionBannerSecondWrapper{ /* Criminal Justice */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-criminal-justice.jpg) !important; 
+}
+./*x*/.artsci_map #sectionLandingBannerSecondWrapper, .artsci_map #sectionBannerSecondWrapper{ /* Psychology */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+.artsci_mfa #sectionLandingBannerSecondWrapper, .artsci_mfa #sectionBannerSecondWrapper{ /* Fine Arts */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-mfa.jpg) !important; 
+}
+/*x*/.artsci_mnpl #sectionLandingBannerSecondWrapper, .artsci_mnpl #sectionBannerSecondWrapper{ /* Nonprofit Leadership */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci.jpg) !important; 
+}
+.artsci_mpa #sectionLandingBannerSecondWrapper, .artsci_mpa #sectionBannerSecondWrapper{ /* Public Administration */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-mpa.jpg) !important; 
+}
+.artsci_msal #sectionLandingBannerSecondWrapper, .artsci_msal #sectionBannerSecondWrapper{ /* Sport Admin + Leadership */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-msal.jpg) !important; 
+}
+
+
+/* Departments */
+.artsci_departments_criminal #sectionLandingBannerSecondWrapper, .artsci_departments_criminal #sectionBannerSecondWrapper{ 
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-criminal-justice.jpg) !important; 
+}
+.artsci_departments_fine-arts #sectionLandingBannerSecondWrapper, .artsci_departments_fine-arts #sectionBannerSecondWrapper{ 
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-fineArts.jpg) !important; 
+}
+.artsci_departments_global #sectionLandingBannerSecondWrapper, .artsci_departments_global #sectionBannerSecondWrapper{ /* Global Awareness Specialization */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-global.jpg) !important; 
+}
+.artsci_departments_international #sectionLandingBannerSecondWrapper, .artsci_departments_international #sectionBannerSecondWrapper{ /* International Studies */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-internationalStudies.jpg) !important; 
+}
+.artsci_departments_africanstudies #sectionLandingBannerSecondWrapper, .artsci_departments_africanstudies #sectionBannerSecondWrapper{ /* International Studies */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-african.jpg) !important; 
+}
+
+/* Legacy banner system */
+.alert #sectionLandingBannerSecondWrapper .sectionBannerText, .alert #sectionBannerSecondWrapper .sectionBannerText,
+.learningcommons #sectionLandingBannerSecondWrapper .sectionBannerText, .learningcommons #sectionBannerSecondWrapper .sectionBannerText,
+.library #sectionLandingBannerSecondWrapper .sectionBannerText, .library #sectionBannerSecondWrapper .sectionBannerText,
+.giving #sectionLandingBannerSecondWrapper .sectionBannerText, .giving #sectionBannerSecondWrapper .sectionBannerText,
+.pwob #sectionLandingBannerSecondWrapper .sectionBannerText, .pwob #sectionBannerSecondWrapper .sectionBannerText,
+.provost #sectionLandingBannerSecondWrapper .sectionBannerText, .provost #sectionBannerSecondWrapper .sectionBannerText,
+.sojourn #sectionLandingBannerSecondWrapper .sectionBannerText, .sojourn #sectionBannerSecondWrapper .sectionBannerText,
+.undergraduate-admissions #sectionLandingBannerSecondWrapper .sectionBannerText, .undergraduate-admissions #sectionBannerSecondWrapper .sectionBannerText{
+	background: none;
+	filter: none; /* IE */	
+}
+
+
+/* ================================================================================== */
+/* ============================ In Development ====================================== */
+
+/* -----===== University Advancement =====----- */
+.advancement2 #sectionLandingBannerSecondWrapper, .advancement #sectionLandingBannerSecondWrapper, .advancement  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-advancement.jpg) !important; 
+}
+/* -----===== Accreditation =====-----  */
+.accreditation #sectionLandingBannerSecondWrapper, .accreditation  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-accreditation.jpg) !important; 
+}
+/* -----===== Albers =====-----  */
+.albers #sectionLandingBannerSecondWrapper, .albers #sectionBannerSecondWrapper, .albers2 #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-albers.jpg) !important; 
+}
+/* -----===== Assessment =====-----  */
+.assessment2 #sectionLandingBannerSecondWrapper, .assessment #sectionLandingBannerSecondWrapper, .assessment  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-assessment.jpg) !important; 
+}
+/* -----===== Board of Trustees =====----- */
+.trustees #sectionLandingBannerSecondWrapper, .trustees  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-trustees.jpg) !important; 
+}
+/* -----===== Education Abroad =====-----  */
+.abroad2 #sectionBannerSecondWrapper, .abroad #sectionLandingBannerSecondWrapper, .abroad  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-education-abroad.jpg) !important; 
+}
+/* -----===== Institutional Research =====-----  */
+.ir2 #sectionLandingBannerSecondWrapper, .ir #sectionLandingBannerSecondWrapper, .ir  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-ir.jpg) !important; 
+}
+/* -----===== IRB =====-----  */
+.irb2 #sectionLandingBannerSecondWrapper, .irb #sectionLandingBannerSecondWrapper, .irb  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-irb.jpg) !important; 
+}
+/* -----===== University Plannning =====-----  */
+.university-planning2 #sectionLandingBannerSecondWrapper, .university-planning #sectionLandingBannerSecondWrapper, .university-planning  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-university-planning.jpg) !important; 
+}
+/* -----===== Sullivan =====-----  */
+.sullivan2 #sectionLandingBannerSecondWrapper, .sullivan #sectionLandingBannerSecondWrapper, .sullivan  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-sullivan.jpg) !important; 
+}
+/* -----===== Strategic Plannning =====-----  */
+.planning2 #sectionLandingBannerSecondWrapper, .planning #sectionLandingBannerSecondWrapper, .planning  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-planning.jpg) !important; 
+}
+/* -----===== Faith and the Great Ideas =====-----  */
+.faithgreatideas2 #sectionBannerSecondWrapper, .faithgreatideas  #sectionBannerSecondWrapper{
+	background-image: url(/_commonImages/sectionBanners/sectionBannerBackground-core.jpg) !important; 
+}
+
+
+
+
+/* Artsci excess */
+
+.artsci_interdisciplinary #sectionLandingBannerSecondWrapper, .artsci_interdisciplinary #sectionBannerSecondWrapper{ /* Interdisciplinary Arts */
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-interdisciplinary.jpg) !important; 
+}
+.artsci_prelaw2 #sectionLandingBannerSecondWrapper, .artsci_prelaw #sectionLandingBannerSecondWrapper, .artsci_prelaw #sectionBannerSecondWrapper{ 
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-prelaw.jpg) !important; 
+}
+.artsci_studioArt #sectionLandingBannerSecondWrapper, .artsci_studioArt #sectionBannerSecondWrapper{ 
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-studioArt.jpg) !important; 
+}
+.artsci_visual2 #sectionLandingBannerSecondWrapper, .artsci_visual #sectionLandingBannerSecondWrapper, .artsci_visual #sectionBannerSecondWrapper{ 
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-visual.jpg) !important; 
+}
+.artsci_lawScholars2 #sectionLandingBannerSecondWrapper, .artsci_lawScholars #sectionLandingBannerSecondWrapper, .artsci_lawScholars #sectionBannerSecondWrapper{ 
+	background-image: url(/_commonImages/sectionBanners/arts-and-sciences/sectionBannerBackground-artsci-lawScholars.jpg) !important; 
+}

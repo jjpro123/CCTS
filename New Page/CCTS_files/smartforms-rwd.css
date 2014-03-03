@@ -1,0 +1,560 @@
+@charset "utf-8";
+/*
+-Calendar Feed
+-Dual Column
+-Feature Item and Feature List
+-Media Gallery Audi, video and photos
+-News 
+-Quotation
+-Staff Bio/List
+-Testimonials
+-Text Box
+*/
+
+/* Created April 2012
+
+Update 1/23/13 by Jason
+Increased line height/padding in Testimonial to adapt to decenders creating tightness between lines.
+Update 8/20/13 by Jason
+Added Staff Bio page styles
+*/
+
+/* =========================  Calendar Feed =============================== */
+/* Output from Calendar RSS */
+
+#pageContent .content .calendar {
+	font-size:1em;
+	list-style-type: none;
+	padding-bottom: 30px;
+}
+#pageContent .content .calendar li a{
+	color:#534741;
+	display:block;
+	line-height:1em;
+	padding:3px 0;
+	text-decoration:none;
+}
+#pageContent .content .calendar li a:hover, #pageContent .content .calendar li a:focus{
+	border-top: 1px solid #7a0711;
+	border-bottom: 1px solid #7a0711;
+	color: #7a0711;
+	padding:2px 0;
+}
+#pageContent .content .calendar .calendarItem {
+	padding-bottom: 8px;
+}	
+#pageContent .content .calendar li .calendarItemTitle{
+	display:block;
+	font-weight:bold;
+}
+#pageContent .content .calendar li .calendarItemDate{ 
+	display:block;
+}
+#pageContent .content .calendar li .calendarItemTime{ 
+	display:block;
+}
+
+
+/* ============================== Dual column ============================= */
+/* Output from Smartform #148 */
+/* makes two HTML-based divs, places them side-by-side                      */
+
+.column1{
+	padding-left:0;
+}
+
+.column2{
+	padding-right:0;
+}
+
+/* ==============================  Feature List and Feature Item  ================================== */
+/* Output from Smartform #154
+/* Creates a header (h3) with a image floated left or right and a paragraph.                      */
+
+#pageContent .featureItem{
+	margin-top:32px;
+	clear:both;
+}
+#pageContent  .content .featureItem h3 a{ /* minor headings */
+	color: #7a0711;
+	text-decoration:none;
+} 
+#pageContent .content .featureItem h3 a:hover, #pageContent .content .featureItem h3 a:focus{ /* links in major headings */
+	text-decoration:underline;
+} 
+#pageContent .featureItem .featureItemImage {
+	border:1px solid #534741;
+	float:left;
+	margin: 0 8px 8px 0px;
+	max-width:224px;
+} 
+#pageContent .content .featureItem a{ 
+	color: #362f2d;
+}
+#pageContent .content .featureItem a:hover{ 
+	color: #7a0711;
+}
+#pageContent  .content .featureItem .readmore{
+	text-align:right;
+}
+#pageContent .featureItem .featureItemText .readmore span{
+	position:absolute;
+	left:-9999px;
+	overflow:hidden;
+} 
+
+
+
+/* ================================ Media Gallery ===================================*/
+/* gallery of images, video, audio */
+
+#mediaGalleryWrapper{
+	xwidth:480px;
+}
+#mediaGalleryWrapper .galleryItem{
+	clear:right;
+	float:left;
+	margin:0 16px 32px 0;
+	min-height:180px; /* very temporary */
+	xposition:relative;
+	xwidth:224px;
+}
+#mediaGalleryWrapper .galleryItem .type{
+	display:none;
+	left:2px;
+	top:2px;
+	position:absolute;
+	opacity:.2;
+}
+#mediaGalleryWrapper .galleryItem .photo{
+	display:block;
+}
+#mediaGalleryWrapper .galleryItem .youtube{
+	display:block;
+}
+
+#mediaGalleryWrapper .galleryItem .photo a,
+#mediaGalleryWrapper .galleryItem .vimeo a,
+#mediaGalleryWrapper .galleryItem .youtube a{
+	display:block;
+	width:100%;
+}
+#mediaGalleryWrapper .galleryItem .youtube a img{
+	border:1px solid #534741;
+}
+
+#mediaGalleryWrapper .galleryItem .photoSource{
+	background:#000000;
+	color:#ffffff;
+	font-size:.6em;
+	line-height:.6em;
+	opacity:.2;
+	padding:2px;
+	position:absolute;
+	right:0;
+	top:136px;
+}
+#mediaGalleryWrapper .galleryItem .caption{
+	color:#736357;
+}
+
+
+
+/* ===========================  News Box  ================================= */
+/* Output from Smartform #??? */
+/*                       */
+/* this is not finished 10/20/11 Eli Christopher */
+
+
+#pageContent .content .newsBox ol {
+	font-size:12px;
+	list-style-type: none;
+	margin-left: 0px;
+}
+
+#pageContent .content .newsBox li a{
+	color:#534741;
+	display:block;
+	line-height:1em;
+	padding: 3px 0;
+	text-decoration:none;
+}
+#pageContent .content .newsBox li a:hover{
+	border-top: 1px solid #7a0711;
+	border-bottom: 1px solid #7a0711;
+	color: #7a0711;
+	padding: 2px 0;
+}
+#pageContent .content .newsBox li{
+	padding-bottom: 8px;
+}	
+#pageContent .content .newsBox li .itemTitle{
+	display:block;
+	font-weight:bold;
+}
+#pageContent .content .newsBox li .itemDate{ 
+	display:block;
+}
+#pageContent .content .newsBox li .itemTime{ 
+	display:block;
+}
+
+
+/* ==============================  Quotation Box  ================================== */
+/* Output from Smartform #142
+/* Creates a box with large quote marks that contains quote, source and affiliation  */
+#primaryContent .quotationBox,#relatedContent .quotationBox{ 
+	background: url(/_commonImages/PageBuilder/contentBoxes_quotation-open.png) no-repeat;
+	border: 1px solid #c7b299;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	color:#666666;
+	margin-bottom:64px;	
+	padding:54px 0 0 0;
+}
+
+.quotationBox p{ /* ::REQUIRED:: actual quote, sans the source or other information */
+	color: #736357;
+	font-size:1em;
+	padding:0 24px 0 24px;
+	margin:0;
+}
+.quotationBox cite{ 
+	color:#736357;
+}
+.quotationBox cite .quotationSource{ /* ::REQUIRED:: source of the quote, sans other information */
+	background: url(/_commonImages/PageBuilder/contentBoxes_quotation-close.png) no-repeat top right;
+	display:block;
+	font-size:16px;
+	line-height:16px;
+	padding:50px 16px 0 24px;
+}
+
+.quotationBox cite .quotationAffiliation{
+	display:block;
+	font-size:14px;
+	font-style:italic;
+	line-height:14px;
+	padding:0 16px 16px 24px;
+}
+
+
+/* ==============================  Staff List and Bio ================================== */
+/* Output from Smartform #143
+/* Box with name, photo              */
+/* changed the fonts to work with responsive 11/25*/
+#staffList { 
+	clear:both;
+}
+#staffList .staffBioBox{
+	border-top:1px solid #998675;
+	color: #362f2d;
+	margin-bottom:16px;
+	position:relative;
+	clear:both;
+	font-family: 'Lato',sans-serif;
+   
+}
+
+#staffList .staffBioBox h3{
+	
+	font-family: 'Lato',sans-serif;
+   
+}
+#staffList .staffBioBox h3 {
+	margin:16px 0 0 0;
+}
+#staffList .staffBioBox h3 a{
+	text-decoration:none;
+}
+#staffList .staffBioBox h3 a:hover, #staffList .staffBioBox h3 a:focus{
+	text-decoration:underline;
+}
+#staffList .staffBioBox .Degree, .staffBioPageInfo .Degree{
+	color: #7a0711;
+	font-size:14px;
+	font-style:italic;
+	line-height:14px;
+	margin:0px 0 2px 0;
+}
+#staffList .staffBioBox .Title, .staffBioPageInfo .Title{ 
+	color:#7a0711;
+	font-size:14px;
+	line-height:14px;
+	
+}
+
+#staffList .staffBioBox .staffBioPhoto{ /* img */
+
+	margin-right:16px;
+	max-width:224px;
+	padding:15px;
+}
+
+.staffBioPhoto
+{
+	float:right;
+	margin-right:.5em;
+	
+}
+#staffList .staffBioBox .staffBioInfo{
+}
+
+.staffBio .Title{ /* in use? */
+	color: #7a0711;
+	font-size:120% ;
+	font-weight:bold;
+	line-height:100%;
+	margin:0px 0 2px 0; 
+}
+
+
+/*Staff Bio Page*/
+
+#primaryContent .staffBioPageWrapper{
+	clear:both;
+}
+#primaryContent .staffBioPageImage{
+	/*position:absolute;
+	left:480px;*/
+}
+#primaryContent .staffBioPageImage img{
+	max-width:224px;
+	border:1px solid #362f2d;
+}
+#primaryContent .staffBioPageInfo .ExtendedBiography{
+	padding-top:32px;
+}
+
+/* ==============================  Testimonial Box  ================================== */
+/* Output from Smartform #141
+/* Creates a speech bubble that includes a quote and citation. Can be used in 3 or 6 column zones */
+/*Code adapted from http://www.sitepoint.com/pure-css3-speech-bubbles/*/
+
+
+.TestimonialBox{
+	font-family:'Lato';
+	margin-bottom:60px;
+}
+.TestimonialBox p{
+	background-color: #fef4e8;
+	border: 1px solid #998675;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	color: #534741;
+	line-height:180%;
+	margin:0;
+	padding:20px;
+	position: relative;
+}
+.TestimonialBox p:before{
+	border: 10px solid;
+	border-color: #998675 transparent transparent #998675;
+	bottom: -20px;
+	content: ' ';
+	height: 0;
+	left: 35px;
+	position: absolute;
+	width: 0;
+}
+.TestimonialBox p:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 36px;
+	bottom: -18px;
+	border: 10px solid;
+	border-color: #fef4e8 transparent transparent #fef4e8;
+}
+
+#primaryContent .TestimonialBox cite, 
+#relatedContent .TestimonialBox cite{
+	color:#534741;
+	display:block;
+	font-size:16px;
+	line-height:16px;
+	padding:5px 15px 0 15px;
+}
+#primaryContent .TestimonialBox cite span, 
+#relatedContent .TestimonialBox cite span{
+	display:block;
+	font-size:14px;
+	font-style:italic;
+	line-height:16px;
+	padding-top:2px;
+}
+
+
+/* ==============================  Text Box  ================================== */
+/* Output from Smartform #140
+/* Creates a box with outline and shadow; header and HTML content.              */
+
+.textBox{ 
+	border: 1px solid #c7b299;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border-top:0;
+	font-family:'Lato';
+	margin-bottom:30px;
+	xpadding-bottom:30px;
+}
+#pageContent .textBox h3{
+	border-top:5px solid #7a0711;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	color:#7a0711;
+	font-size:150%;
+	margin:0px;
+	text-align:center;
+	padding:0;    
+	
+}
+#pageContent .textBox h3 span{ 
+	display:block;
+	padding: 0 8px 8px 8px;
+	
+}
+
+#pageContent .textBox .textBoxContent{
+	color: #362F2D;
+	padding: 0 15px 15px 15px;
+}
+
+
+/*#pageContent .textBox h3:before {
+	font-family: 'Glyphicons Halflings';
+    content: "";
+}*/
+
+
+.textBox .textBoxContent h3{ /* h3s inside the box content*/
+	background:none;
+	text-align:left;
+}
+
+.textBox .textBoxContent p{
+	padding:0 0 16px 0;
+	font-size:12px;
+}
+.textBox .textBoxContent ol,
+.textBox .textBoxContent ul{
+	padding:0 0 16px 0;
+	font-size:12px;
+}
+.textBox .textBoxContent u{
+	text-decoration:none;
+	border-bottom: double 3px #333;
+}
+
+/* ==============================  News and Announcements  ================================== */
+/* Output from Smartform #144*/
+
+.newsStorySubtitle{ /* h3 */
+	margin:0px;
+	padding-top:0;
+}
+.newsStory{ /* h3 */
+	margin-top:24px;
+}
+.publicationDate{
+	color: #534741;
+	font-style:italic;
+}
+
+/* ==============================  Categorized Content  ================================== */
+/* Used for Admissions Counselors */
+
+#categorizedContentWrapper{}
+
+.content #categorizedContentWrapper .categoryBreadcrumbWrapper{ /* ol   counselor breadcrums */
+	background-color: #fef4e8;
+	border-top: 1px solid #998675;
+    display: block;
+	height:22px;
+	margin-left:0;
+}
+#categorizedContentWrapper .categoryBreadcrumbWrapper li {
+	background:url("/_commonImages/PageBuilder/breadcrumbs_levelXitem_background.png") no-repeat scroll right center transparent;
+	display:block;
+    float:left;
+	padding:0 12px 0 6px;
+}
+#categorizedContentWrapper .categoryBreadcrumbWrapper li a {
+    color:#736357;
+	display:block;
+    text-decoration: none;
+}
+#categorizedContentWrapper .categoryBreadcrumbWrapper li a:hover, 
+#categorizedContentWrapper .categoryBreadcrumbWrapper li a:active {
+    color:#7a0711;
+    text-decoration: underline;
+}
+
+#categorizedContentWrapper #categoryListWrapper ol{  /* list of states, counties and schools */
+	border-left:1px solid #e3d6c6;
+	list-style-type:none;
+	font-size:12px;
+	margin-top:24px;
+	padding-left:8px;
+}
+#categorizedContentWrapper #categoryListWrapper ol .active a{
+	font-weight:bold;
+	text-decoration:none;
+}
+#categorizedContentWrapper #categoryListWrapper ol .active a:hover, 
+#categorizedContentWrapper #categoryListWrapper ol .active a:active{
+	color:#362f2d;
+	cursor: default;
+}
+
+#categorizedContentWrapper .categoryItem .categoryItemProfilePic img{
+    float: right;
+    max-width: 224px; /* restricts max size, since photos are larger */
+}
+
+/* ==============================  Media Element: Image  ================================== */
+/* Add an image as a unique content block for use in related content or media gallery 
+   Output from "Media Element: Image" smartform (#149) */
+#primaryContent .imageBlock, #relatedContent .imageBlock{ 
+	margin-bottom:16px;
+	overflow:hidden;
+	position:relative;
+}
+#relatedContent .imageBlock .imageWithoutBorder{ } /* div */
+
+#primaryContent .imageBlock .imageWithBorder,
+#relatedContent .imageBlock .imageWithBorder{ /* div */
+	border: 1px solid #534741;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	display:block;
+}
+
+#relatedContent .imageBlock img{
+	xwidth:100%;
+}
+
+#primaryContent .imageBlock .imageSource,
+#relatedContent .imageBlock .imageSource{ 
+	bottom:16px;
+	right:4px;
+	overflow:hidden;
+	position:absolute;
+	text-align:right;
+	z-index:9999;
+}
+#primaryContent .imageBlock .imageSource span,
+#relatedContent .imageBlock .imageSource span{ 
+	color:#ffffff;
+	filter:alpha(opacity=30); /* ie */
+	font-size:10px;
+	opacity:0.3;
+}
+#primaryContent .imageBlock .imageCaption,
+#relatedContent .imageBlock .imageCaption{ 
+	color: #534741;
+	font-size:10px;
+}

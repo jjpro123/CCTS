@@ -1,0 +1,20 @@
+@charset "utf-8";
+/* CSS Document */
+
+#SUTemplateMainTable, #SearchWrapper {
+	display:none;
+}
+#PageWrapper {
+	border-width:0px;
+}
+#MainContent {
+	float:none;
+	width:100%;
+}
+#PrintBanner {
+	display:block;
+	float:left;
+}
+#Banner {
+	float:left;
+}

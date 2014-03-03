@@ -1,0 +1,1203 @@
+/* *********************************************************
+   level3.css
+   ****************************************************** */
+
+
+/* =========================== Section Banner =========================== 
+   Block above page's content that contains information about the section of the website in which the subpage exists
+   #sectionLandingBannerWrapper is taller
+*/
+#sectionBannerWrapper #sectionBannerSecondWrapper,
+#sectionLandingBannerWrapper #sectionBannerSecondWrapper { 
+	background: url(/_commonImages/sectionBanners/sectionBannerBackground-default2.jpg) center -12px no-repeat ; /* 200px height */
+	border: 15px solid #ffffff; 
+	border-bottom:0;
+	border-top-left-radius: 4px; border-top-right-radius: 4px;
+	padding:0;
+	position: relative;
+	top: 11px;
+}
+#sectionLandingBannerWrapper #sectionBanner{
+	margin-left:0;
+	margin-right:0;
+}
+#sectionBannerWrapper #sectionBannerTextWrapper{
+	margin:0 15px;
+	min-height:115px; /* if a sectionTitle gets too long, the container BG expands */
+	position:relative;
+}
+#sectionLandingBannerWrapper #sectionBannerTextWrapper{
+	min-height:165px; /* if a sectionTitle gets too long, the container BG expands */
+	position:relative;
+}
+.sectionBannerText{ /* contains .sectionAncestor and .sectionTitle. An additional unique class (generated) also added for special styling. */ 
+	background: rgba(54, 47, 45, 0.6);
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#9a362f2d', endColorstr='#9a362f2d'); /* IE */	
+	bottom:15px;
+	font-family:'Lato',sans-serif;
+	left:0;
+	min-width:220px;
+	padding: 10px 15px 10px 15px;
+	position:absolute;
+	border-top-right-radius: 2px; -moz-border-top-right-radius: 2px; -webkit-border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px; -moz-border-bottom-right-radius: 2px; -webkit-border-bottom-right-radius: 2px;
+}
+.sectionBannerText .sectionAncestor{
+	color: #ffffff; 
+	font-size:24px;
+	line-height:24px;
+	text-shadow: 0px 0px 2px #333333;
+}
+ .sectionBannerText .sectionTitle{
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-size:32px;
+	font-weight:900;
+	line-height:32px;
+	text-shadow: 0px 0px 2px #333333;
+}
+
+
+/* =========================== Page =========================== */
+#pagetemplateWrapper{
+	xbackground: url(/_commonImages/PageBuilder/pagetemplateWrapperBackground.png) center top repeat-y;
+}
+
+#pageWrapper{
+	xz-index:30000;
+}
+#pagetemplateBody{
+	background:#ffffff;
+	box-shadow: 0 0 8px 0px rgba(0,0,0,0.5);
+	
+	/*10px 0px 10px -7px rgba(0,0,0,0.5),
+	 -10px 0px 10px -7px rgba(0,0,0,0.5);*/
+		
+	margin-bottom:10px;
+	border-bottom-right-radius: 4px;
+	border-bottom-left-radius: 4px;
+	-moz-border-radius-bottomright: 4px;
+	-moz-border-radius-bottomleft: 4px;
+	-webkit-border-bottom-right-radius: 4px;
+	-webkit-border-bottom-left-radius: 4px;
+}
+
+#pageWrapper #pageDefault{
+	background:#cccccc url(/_commonImages/PageBuilder/pageDefault_background.png) center repeat-y;
+	padding:12px 0;
+}
+#pageWrapper #pagePage{
+	background:#ffffff url(/_commonImages/PageBuilder/pagePage_background.png) center repeat-y;
+	padding-bottom:12px;
+}
+
+/* ------------------------ BreadCrumbs ------------------------ */
+
+#breadcrumbsWrapper{
+}
+#breadcrumbs{ 
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+	font-size:11px;
+	line-height:11px;
+	height: 11px;
+	padding-top:25px;
+	padding-bottom:25px;
+} 
+#breadcrumbsInner{
+}
+#breadcrumbs ol li{
+	background:url(/_commonImages/PageBuilder/breadcrumbs_levelXitem_background.png) right center no-repeat;
+	display:block;
+	float:left;
+	height:11px;
+	padding:0 13px 0 8px; /*chevron background is 5px. 13px padding-left makes space look equal. */
+}
+#breadcrumbs ol .LevelLastItem{
+	background:none;
+	padding:0 0 0 8px; /* no chevron bg */
+}
+#breadcrumbs ol li a{
+	color:#736357; 
+	display:block;
+	text-decoration:none;
+}
+#breadcrumbs ol li a:hover{
+	color:#7a0711; 
+	text-decoration:underline;
+}
+#breadcrumbs ol .Level0Item{ } /* the home icon container*/
+#breadcrumbs ol .Level0Item a{ /* the home icon */
+	background:url(/_commonImages/PageBuilder/breadcrumbs_level0item_background.png) -8px center no-repeat;
+	height:11px;
+	padding:0;
+	width:8px;
+}
+#breadcrumbs ol .Level0Item a:hover{
+	background:url(/_commonImages/PageBuilder/breadcrumbs_level0item_background.png) left center no-repeat;
+}
+#breadcrumbs ol .Level0Item span{
+	position:absolute;
+	left:-9999px;
+	overflow:hidden;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------- */
+/* ----------------------------------------------- Site Navigation ----------------------------------------------- */
+
+
+#siteNavigationWrapper { /* nav container wrapper*/
+	margin-top:32px;
+}
+#siteNavigation { /* nav container */
+	box-shadow: 8px 0 8px -8px #ddd ;
+	-moz-box-shadow: 8px 0 8px -6px #ddd;
+	-webkit-box-shadow: 8px 0 8px -6px #ddd;
+	padding-bottom:15px;
+}
+
+#siteNavigation #siteNavigationTitleWrapper{
+	text-align:center;
+}
+#siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle{
+	padding:0 0 10px 0;
+	text-align:center;
+}
+
+#siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle span a,
+#siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle span a:visited{
+	color:#534542;
+	display:block;
+	font-family: 'Lato', sans-serif;
+	font-weight:300;
+	font-size:1.5em;
+	line-height:100%;
+	text-decoration:none;
+	width:100%;
+}
+#siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle span a:hover,
+#siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle span a:focus{
+	color:#7a0711;
+}
+
+#siteNavigation #menu{ /* The whole menu */
+	border-top:1px solid #e3d6c6;
+	list-style-type:none;
+	max-height:none;
+}
+#siteNavigation .navbar-collapse{
+	padding-left:0;
+	padding-right:0;
+}
+
+/* ------------------- The arrow next to submenu items --------------------- */
+#siteNavigation #menu .glyphicon{ 
+	color:#736357;
+	cursor:pointer;
+	display:block;
+	padding:.4em 0;
+	position:absolute;
+	right:1%;
+	width:1.2em;
+}
+#siteNavigation #menu .TopLevelItemSelected .glyphicon{
+   transform:rotate(90deg);
+	-ms-transform:rotate(90deg); /* IE 9 */
+	-webkit-transform:rotate(90deg); /* Safari and Chrome */
+   	color:#ffffff;
+}
+#siteNavigation #menu .TopLevelItemSelected .glyphicon, #siteNavigation #menu .ItemSelected .glyphicon{ 
+	color:#ffffff;
+	transform:rotate(90deg);
+	-ms-transform:rotate(90deg); /* IE 9 */
+	-webkit-transform:rotate(90deg); /* Safari and Chrome */
+}
+#siteNavigation #menu .glyphicon:hover{ 
+	color:#7a0711;
+}
+#siteNavigation #menu .TopLevelItemSelected .glyphicon:hover, #siteNavigation #menu .ItemSelected .glyphicon:hover{ 
+	color:#ffffff;
+}
+
+
+
+#siteNavigation #menu li{ /* all items */
+	border-bottom:1px solid #e3d6c6;
+	position:relative; /* to allow <span> (arrow) to be positioned within this block */
+}
+
+#siteNavigation #menu li em{
+	margin-right: 0;
+    margin-top: 0;
+}
+#siteNavigation #menu li a{ /* all links in all items */
+	display:block; 
+	color:#534741;
+	font-size:1em; 
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+	line-height:1.2em; 
+	padding: 6px 20px 6px 10px;
+	position:relative;
+	text-decoration:none;
+}
+#siteNavigation #menu li a:hover,
+#siteNavigation #menu li a:focus{
+	background: -webkit-linear-gradient(#ffffff, #fef4e8); /* For Safari */
+	background: -o-linear-gradient(#ffffff, #fef4e8); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(#ffffff, #fef4e8); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(#ffffff, #fef4e8); /* Standard syntax */
+}
+#siteNavigation #menu li a:active{
+	color:#7a0711;
+}
+#siteNavigation #menu li a span{ /*all spans in all links in all items*/
+	display:block;
+	xpadding:5px 16px 5px 8px;
+}
+#siteNavigation #menu li ul li { /* all Level2 items and all Level3 items */ 
+	border-bottom:1px solid #fef4e8;
+}
+#siteNavigation #menu li ul li ul li { /*tertiary menu lis*/
+	border-bottom:1px solid #ffffff;
+}
+
+#siteNavigation #menu li ul li a span{ /* affects Level2 & Level3 menu items*/
+	padding-left: 15px;  
+}
+#siteNavigation #menu li ul li ul li a span{ /* affects Level3 menu items*/
+	padding-left: 30px; 
+}
+
+#siteNavigation #menu .TopLevelItemSelected>span, /* selected item on top level only */
+#siteNavigation #menu .ItemSelected>span{  /* all other selected items */
+	background:#7a0711;
+	border:1px solid white;
+	box-shadow: 0 0 4px 0px #534741;
+	-moz-box-shadow: 0 0 4px 0px #534741;
+	-webkit-box-shadow: 0 0 4px 0px #534741;
+	color:#ffffff; 
+	display:block;
+	padding-left:10px;
+	position:relative;
+ 	left: -10px;
+	width:240px;
+}
+#siteNavigation #menu .TopLevelItemSelected>span>a, #siteNavigation #menu .ItemSelected>span>a{  /* keep the red arrow */
+	background:none; 
+	cursor:default; 
+}
+#siteNavigation #menu .TopLevelItemSelected>span:after, #siteNavigation #menu .ItemSelected>span:after{ /* red triangle */
+	content: ' ';
+	position: absolute;
+	width: 0; 
+	height: 0; 
+	border-top: 14px solid transparent; border-left: 10px solid #7a0711; border-bottom: 14px solid transparent;
+ 	right: -10px;
+	margin: auto 0;
+	top: 0; 
+	bottom: 0;
+}
+#siteNavigation #menu .TopLevelItemSelected>span:before, #siteNavigation #menu .ItemSelected>span:before{ /* white triangle */
+	content: ' ';
+	position: absolute;
+	width: 0; 
+	height: 0; 
+	border-top: 14px solid transparent; border-left: 10px solid #fff; border-bottom: 14px solid transparent;
+ 	right: -12px;
+	margin: auto 0;
+	top: 0; bottom: 0;
+}
+
+
+#siteNavigation #menu .TopLevelItemSelected>span>a, /* selected item on top level only */
+#siteNavigation #menu .ItemSelected>span>a{ /* all other selected items */
+}
+#siteNavigation #menu .TopLevelItemSelected>span>a>span, /* selected item on top level only */
+#siteNavigation #menu .ItemSelected>span>a>span{ /* all other selected items */
+	color:#ffffff; 
+	xpadding:10px 10px 10px 24px;
+}
+#siteNavigation #menu li ul .ItemSelected>span>a>span{ /* secondary selected items */
+	xpadding-left:40px;
+}
+#siteNavigation #menu li ul li ul .ItemSelected>span>a>span{ /* tertiary selected items */
+	xpadding-left:56px;
+}
+
+
+#siteNavigation #menu .TopLevelItemSelected .dropdownArrow{ 
+	background: url(/_commonImages/PageBuilder/siteNavigation_selected_arrow.png) top left repeat-x; /* white arrow */
+}
+#siteNavigation #menu .TopLevelItemSelected .ItemNotSelected .dropdownArrow{ /* notselected arrows under toplevel selected section */
+	background: url(/_commonImages/PageBuilder/siteNavigation_arrow.png) top left repeat-x; /* brown arrow */
+}
+#siteNavigation #menu .secondLevel .ItemSelected .dropdownArrow{ /* notselected arrows under second-level selected section */
+	background: url(/_commonImages/PageBuilder/siteNavigation_selected_arrow.png) top left repeat-x; /* white arrow */
+}
+
+
+/* ============================================== Sitewide Content ==============================================*/
+/* This is content that currently appears in the left hand column on all templates below site navigation */
+#sitewideContent {
+	padding: 0px 16px 0px 8px;
+}
+#sitewideContent  p{
+	color:#534741;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	margin-bottom:8px;
+}
+#sitewideContent a { 
+	color: #534741;
+/* hover and focus styles are below in pageContent */
+}
+
+
+/* ============================================== Page Title ==============================================*/
+#PageTitleWrapper h1{ 
+	color: #7a0711;
+	font-family: 'Lato', sans-serif;
+	font-size:32px ;
+	font-weight:900;
+	line-height:100%;
+} 
+
+
+/* ============================================== Content ==============================================*/
+#accessoryContent {
+	padding-left:0;
+}
+#primaryAndRelatedContentWrapper {
+	padding-top:32px;
+}
+#primaryContentWrapper{
+	padding-left:0;	
+}
+
+#primaryContent {
+	padding-bottom:64px;
+}
+#relatedContentWrapper {
+	padding:0;
+}
+
+/* -------------------------- Headings/Paragraphs -------------------------- */
+
+
+#pageContent h2, #accessoryContent h2{ /* major headings */
+	color: #7a0711;
+	clear:both;
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+} 
+#pageContent h2 a, #accessoryContent h2 a{ /* links in major headings */
+	color: #7a0711;
+	text-decoration:none;
+} 
+#pageContent h2 a:hover, #pageContent h2 a:focus, 
+#accessoryContent h2 a:hover, #accessoryContent h2 a:focus{ /* links in major headings */
+	text-decoration:underline;
+} 
+#pageContent h3, #accessoryContent h3{ /* minor headings */
+	color: #7a0711;
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+	margin:16px 0 2px 0; 
+} 
+#pageContent h3 a, #accessoryContent h3 a { /* minor headings that are also links*/
+	color: #7a0711;
+	text-decoration:none;
+} 
+#pageContent h3 a:hover,  #pageContent h3 a:focus,
+#accessoryContent h3 a:hover, #accessoryContent h3 a:focus{ /* minor headings that are also links*/
+	text-decoration:underline;
+} 
+#pageContent h4, #accessoryContent h4{ 
+	color: #362f2d;
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+	margin:8px 0 2px 0; 
+} 
+#pageContent h4 a, #accessoryContent h4 a{ /* minor headings */
+	color: #362f2d;
+	text-decoration:none;
+} 
+#pageContent h4 a:hover, #pageContent h4 a:focus, 
+#accessoryContent h4 a:hover, #accessoryContent h4 a:focus{ /* links in major headings */
+	text-decoration:underline;
+} 
+
+#pageContent h5, #pageContent h6. #accessoryContent h5, #accessoryContent h6 {  /* H6s should be disabled. But just in case... */
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+	color: #7a0711;
+} 
+
+#pageContent p{
+	color:#362f2d;
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+	margin-bottom:1.3em;
+}
+
+/* -------------------------- Lists -------------------------- */
+#pageContent .content ul, #sitewideContent .content ul { /* adding .content gets around Ektron-added UL surrounding everything */
+	color:#362f2d;
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+	list-style-type:circle;
+	margin-bottom: 15px;
+    margin-left: 15px;
+}
+#pageContent .content ol, #sitewideContent .content ol { /* adding .content gets around Ektron-added UL surrounding everything */
+	color:#362f2d;
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+	list-style-type:decimal;
+}
+/* styles for lists in forms is in the forms section */
+
+/* -------------------------- Links -------------------------- */
+#pageContent a { 
+	color: #362f2d; 
+	text-decoration: underline;
+}
+#pageContent a:hover, #pageContent a:focus, 
+#sitewideContent a:hover, #sitewideContent a:focus { color: #7a0711; }
+
+
+/* -------------------------- Tables -------------------------- */
+#pageContent table{
+	width:100%;
+	margin-bottom:10px; /* same as paragraphs */
+	font-size:11px;
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+}
+#pageContent table th{ 
+	background-color:#fef4e8;
+	font-weight:bold;
+	padding:4px;
+}
+#pageContent table td{
+	padding:4px;
+}
+#pageContent .tableWithBorders, #pageContent .sortable{ /* include all sortable tables too */
+	border-bottom: 1px solid #998675;
+	border-right: 1px solid #998675;
+}
+#pageContent .tableWithBorders thead th, #pageContent .sortable thead th{ 
+	background-color:#534741;
+	border-top: 1px solid #998675;
+	border-left: 1px solid #998675;
+	color:#ffffff;
+	cursor:pointer;
+}
+
+#pageContent .sortable thead th #sorttable_sortfwdind, 
+#pageContent .sortable thead th #sorttable_sortrevind{
+	font-size:18px;
+	line-height:18px;
+}
+#pageContent .sortable thead .sorttable_sorted, 
+#pageContent .sortable thead .sorttable_sorted_reverse{
+	background-color: #736357;
+}
+
+#pageContent .tableWithBorders th, #pageContent .sortable th{ 
+	background-color:#fef4e8;
+	border-top: 1px solid #998675;
+	border-left: 1px solid #998675;
+}
+#pageContent .tableWithBorders td, #pageContent .sortable td{
+	border-top: 1px solid #998675;
+	border-left: 1px solid #998675;
+}
+
+
+
+/* =========================== Video =========================== */
+
+@media (min-width: 768px) { /* overrides width 464 thats usually hardcoded */
+  body #primaryContent object, body #primaryContent embed{
+    width: 450px;
+  }
+}
+
+#primaryContent embed, #primaryContent object{
+	max-width:464px;
+}
+#relatedContent embed, #relatedContent object{
+	max-width:224px;
+}
+
+/* =========================== Images =========================== */
+
+/*If not available in CMS, classes to me added manually. */
+
+img{
+	display:inline-block;
+	height:auto;
+	max-width:100%;
+	&:extend(.img-responsive);
+}
+/* set max width to keep layout from blowing out due to too-large images */
+.template2col #primaryContent img { xmax-width:704px; }
+.template3col #primaryContent img { xmax-width:464px; }
+.templateSectionLanding #primaryContent img { xmax-width:464px; }
+
+#relatedContent img { /* set max width to keep layout from blowing out due to too-large images */
+	xmax-width:224px;
+}
+
+#primaryContent .imageOnRight, #primaryContent .imageOnRightWithBorder {
+	float: right;
+	margin: 8px 0 8px 8px;
+}
+#primaryContent .imageOnLeft, #primaryContent .imageOnLeftWithBorder {
+	float: left;
+	margin: 8px 0 8px 8px;
+}
+#primaryContent .imageOnRightWithBorder, #primaryContent .imageOnLeftWithBorder {
+	border:1px solid #cccccc;
+	padding:4px;
+}
+
+/* ================================ Related Content ============================= */
+x#relatedContent { 
+	margin-top:47px; /* aligns to bottom margin of H1 */
+}
+x.templateSectionLanding #relatedContent { 
+	margin-top:0px; /* since sectionLanding layouts don't have the same H1s */
+}
+
+
+
+x#relatedContent .typeYoutubeVideo{ 
+	color:#666666;
+	margin-bottom:50px;
+	padding-bottom:8px;
+}
+x#relatedContent .typeYoutubeVideo h3{
+	border-top:1px solid #cccccc;
+	padding:4px 0 8px 0;
+}
+x#relatedContent .typeYoutubeVideo p{
+	padding:8px 0;
+}
+
+
+
+/* ============================================== Blog ==============================================*/
+
+/* ---------- Blog Posts in #primaryContent---------------- */
+.blogEntryWrapper{ /* changed from BlogEntry */
+	margin-top:48px;
+}
+.blogEntryWrapper + .blogEntryWrapper{ /* all but the first .blogEntryWrapper */
+	border-top:1px solid #7a0711
+}
+#pageContent .blogEntryWrapper h2{ /* most styles inherited from standard h2 styles */
+	margin:4px 0 4px 0;
+}
+.blogEntryWrapper .postedBy{
+	color:#998675;
+	font-size:12px;
+	font-style:italic;
+	line-height:12px;
+	margin-bottom:12px;
+}
+.blogEntryWrapper .addthis_toolbox{
+	background: #fef4e8;
+    border-top: 1px solid #c7b299;
+    border-bottom: 1px solid #c7b299;
+    float: right;
+    margin: 0 0 4px 16px;
+    padding: 8px 4px 8px 8px;
+}
+.blogEntryWrapper .addthis_toolbox .at300b,
+.blogEntryWrapper .addthis_toolbox .at300m{
+	padding: 0;
+	margin-right:4px;
+}
+#pageContent .blogEntry img{ /* only works if not overridden in the post */
+	margin:4px;
+}
+#pageContent .blogEntry .commentsLink a{
+	color:#736357;
+}
+
+
+ /* ---------- BlogLatestPosts ---------------- */
+.BlogLatestEntries{
+	padding-top:84px; /* arbitrary */
+}
+.BlogLatestEntries h3{
+	border-top: 1px solid #7a0711;
+	padding-top:4px;
+}
+#pageContent #BlogLatestPosts ul{
+	color: #534741;
+    font-size: 12px;
+	line-height:14px;
+    list-style: none;
+    margin-bottom: 32px;
+    margin-left: 0;
+}
+#pageContent #BlogLatestPosts ul li{
+    margin-top: 12px;
+}
+#pageContent .BlogLatestEntries #BlogLatestPosts li a{
+	color:#534741;
+	display:block;
+	line-height:1em;
+	padding: 3px 0;
+	text-decoration:none;
+}
+#pageContent .BlogLatestEntries #BlogLatestPosts li a:hover{
+	border-top: 1px solid #7a0711;
+	border-bottom: 1px solid #7a0711;
+	color: #7a0711;
+	padding: 2px 0;
+}
+#pageContent .BlogLatestEntries #BlogLatestPosts li a .latestEntryTitle{
+	font-weight:bold;
+}
+#pageContent #BlogLatestPosts #BlogLatestPosts li a .publishDate{
+	font-style:italic;
+}
+
+
+/* ---------- BlogLatestPosts ---------------- */
+.BlogArchive{ }
+.BlogArchive h3{
+	border-top: 1px solid #7a0711;
+	padding-top:4px;
+}
+#pageContent .BlogArchive ul{
+    list-style:none;
+	margin-left:0;
+}
+
+.blogPostWrapper h2{
+	border-top:1px solid #cccccc;
+	padding-top:8px;
+}
+.blogPostWrapper .postedDate{
+	margin-top:8px;
+	font-weight:bold;
+}
+.blogPostWrapper .postedBy{
+	font-style:italic;
+	margin-bottom:12px;
+}
+.blogPostWrapper .addthis_toolbox{
+    border-bottom: 1px solid #7A0711;
+    border-top: 1px solid #7A0711;
+    float: right;
+    margin: 0 0 16px 16px;
+    padding: 8px 0;
+}
+.blogPostWrapper .addthis_toolbox .addthis_button_compact{
+	display:block;
+}
+
+/* Blog recept posts (in #related content) */
+
+#blogLatestPostsWrapper .subscribeLink img{
+	margin-bottom:24px; /* arbitrary */
+}
+#blogLatestPostsWrapper h3{
+	border-top:1px solid #cccccc;
+	padding-top: 4px;
+	color: #0F0;
+
+}
+#blogLatestPosts ul li{
+	margin-bottom:12px;
+	line-height:125%;
+}
+.blogPostRSSList{ }/* ul. list of blog entries */
+.blogPostRSSList .blogPostRSSItem .dateModified{ 
+	font-weight:bold; 
+}
+
+
+/* slideshow */
+#pageContent .content #sectionSlideshow{
+	list-style:none;
+	margin-left:0;
+}
+#pageContent .content #sectionSlideshow li:nth-child(n+2){
+	max-height:300px
+}
+#pageContent .span_3 div.anythingSlider{ /* determines dimensions */
+	width: 224px; 
+	height: 149px; 
+}
+#pageContent .span_6 div.anythingSlider{ /* determines dimensions */
+	width: 464px; 
+}
+#pageContent .span_9 div.anythingSlider{ /* determines dimensions */
+	width: 704px; 
+	height: 309px; 
+}
+#pageContent div.anythingSlider panel{
+	position:relative;
+	left:-16px;
+}
+#pageContent .anythingSlider .anythingWindow ul{
+	margin-left:0;
+}
+
+/* Navigation Arrows */
+/*arrow styles assume default image*/
+#pageContent div.anythingSlider .arrow {
+	top: 50%;
+	position: absolute;
+	display: block;
+	z-index:2000; /* was 32000 - Jason 6/20/11 */
+}
+#pageContent div.anythingSlider .arrow a {
+	display: block;
+	height: 120px;
+	margin: -60px 0 0 0; /* half height of image */
+	width: 45px;
+	text-align: center;
+	outline: 0;
+	background: url(/_commonScripts/PageBuilder/anythingSlider/images/arrows-default.png) no-repeat;
+	/*background:url(/_commonImages/PageBuilder/anythingSlider_arrows.png) no-repeat;*/
+}
+#pageContent div.anythingSlider .arrow a span { display: block; text-indent: -9999px; }
+#pageContent div.anythingSlider .forward { right: 0; }
+#pageContent div.anythingSlider .back { left: 0; }
+#pageContent div.anythingSlider .forward a { background-position: 0 -35px; } 
+#pageContent div.anythingSlider .back a { background-position: -88px -35px; }
+#pageContent div.anythingSlider .forward a:hover, div.anythingSlider .forward a.hover { background-position: 0 -35px; }
+#pageContent div.anythingSlider .back a:hover, div.anythingSlider .back a.hover { background-position: -88px -35px; }
+#pageContent div.anythingSlider .forward.disabled { display: none; } /* disabled arrows, hide or reduce opacity: opacity: .5; filter: alpha(opacity=50); */
+#pageContent div.anythingSlider .back.disabled { display: none; }
+
+
+/* ============================== Search tool on search.aspx ============================== */
+#bodySearch{
+	margin-bottom:16px; /*  */
+}
+#bodySearch #bq{ /* text box */
+	border-radius: 2px;
+	border:1px solid #736357;
+	line-height:20px;
+	height:20px;
+	margin:0;
+	padding:2px 4px;
+	width:200px;
+}
+#bodySearch #bsa{ /* submit button */
+	border:1px solid #736357;
+	border-radius: 2px;
+	color:#362f2d;
+	line-height:24px;
+	height:26px;
+	width:72px;
+	position:relative;
+	top:1px;
+}
+#bodySearch #bsa:hover{ /* submit button */
+	color: #362f2d;
+	background:#e3d6c6;
+}
+
+/* ============================== Directory + Site index============================= */
+
+#DepartmentList_Selector, #AlphaList{ /* ul */
+	height:20px; /* 18px line height + 2 1px borders */
+	margin:16px 0 32px 0;
+} 
+#DepartmentList_Selector li, #AlphaList li { 
+	border:1px solid #c7b299;
+	float:left;
+	line-height:18px;
+	margin:0 1px;
+	text-align:center;
+	width:18px;
+} 
+#DepartmentList_Selector .Selected, #AlphaList .selected{ 
+	background:#7a0711;
+	color:#ffffff;
+} 
+#DepartmentList_Selector .notvalid, #AlphaList .notvalid{ 
+	color:#999999;
+} 
+#DepartmentList_Selector a, #AlphaList a{ 
+	display:block;
+	text-decoration:none;
+	width:100%;
+} 
+#DepartmentList_Selector a:hover, #AlphaList a:hover{ 
+	background:#736357;
+	color:#ffffff;
+} 
+#DepartmentList{
+	clear:both;
+	color:#362F2D;
+}
+#StaffListPager{
+	padding-top:64px;
+}
+/* ---------------------------- site index --------------------------------- */
+
+#IndexCategories{ /* ul */
+	height:24px;
+	padding-botton:16px;
+}
+#IndexCategories #siteIndexIntroduction{
+	clear:both;
+}
+
+#IndexCategories li{
+	background:#534741;
+	border:1px solid #c7b299;
+	float:left;
+	line-height:22px;
+	margin:0 1px;
+	text-align:center;
+	width:140px;
+	height:22px;
+}
+#IndexCategories li a{
+	color:#fef4e8;
+	display:block;
+	text-decoration:none;
+}
+#IndexCategories li a:hover{
+	background:#736357;
+	color:#ffffff;
+}
+#IndexCategories .selected{
+	background:#7a0711;
+	color:#ffffff;
+}
+
+#LinkList{ }
+#LinkList li{
+	color:#362F2D;
+	padding-bottom:8px;
+}
+
+
+/* ------------------------------------------------------------------*/
+/* popup video styles*/
+.popup #pageContent{
+	padding-bottom:64px;
+}
+.popup #pageContent .videoPopup{
+	margin:0 29px;
+	width:646px;
+}
+.popup #pageContent h2{
+	color:#ffffff; 
+	font-weight:normal;
+	margin-top:32px;
+}
+.popup #pageContent p{
+	color:#362f2d; 
+}
+.popup object, .popup iframe{
+	border:3px solid white;
+	margin:auto auto; 
+}
+
+/* ============================== Authorized Login tool ============================== */
+
+.LoginContainer{
+	background: #fef4e8;
+	border: solid 1px #c7b299;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	max-width:464px;
+	padding: 0px 16px 16px 16px;
+}
+
+.AuthMessage{
+	color: #7a0711;
+	font-size:150% ;
+	line-height:100%;
+	margin:16px 0 16px 0; 
+	clear:both;
+}
+
+.UserNameContainer, .PasswordContainer{ /* containers of username and password labels/inputs */
+	margin-bottom:12px;
+}
+
+.InputLabel{
+	color: #534741;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 16px;
+	margin: 16px 0 0;
+}
+
+/* ============================== TaxonomyContent ============================== */
+
+.widgetEdit {
+	line-height: 35px;
+	vertical-align:middle;
+}
+.widgetEdit label {
+	display:inline-block;
+	width: 150px;
+}
+    .widgetEdit img 
+    {
+        vertical-align:middle;
+    }
+    .widgetEdit table
+    {
+        line-height: 15px;
+        width: auto !important;
+    }
+   #pageContent .widgetEdit input[type="text"]
+    {
+        width: 400px;
+    }
+.taxonomyCategories fieldset {
+	background: #fef4e8;
+	border: solid 1px #c7b299;
+	padding: 0px 16px 16px 16px;
+}
+.taxonomyCategories #SearchFilter .fieldWrapper {
+	margin-bottom:16px;
+}
+#pageContent .content #TaxonomyResultList{
+	list-style: none;
+	margin-left: 0;
+}
+#pageContent .content #TaxonomyResultList li{
+	list-style-type:none;
+	margin-top: 16px
+}
+#pageContent .content #TaxonomyResultList li h3{
+	font-size: 18px /* req b/c basefont size for <li>s is 14px, not 12px - Jason 9/21/12 */
+}
+
+.taxonomyCategories #SearchFilter label{
+	color:#362F2D;
+	display:inline-block;
+	font-weight: bold;
+	width: 144px;
+}
+.taxonomyCategories #ResultCount { /* span inside h2; shows # or results*/
+	color:#534741;
+	text-shadow:none;
+	font-weight:bold;
+	margin:10px;
+	font-size:12px;
+	vertical-align:middle;
+}
+	
+.pajinate .page_navigation{
+	margin: 32px auto;
+	text-align:center;
+	width: 464px;
+}
+.pajinate .page_navigation a {
+	display:inline-block;
+	margin:0 4px;
+	padding:2px;
+}
+
+#pageContent .pajinate .page_navigation .first_link,
+#pageContent .pajinate .page_navigation .previous_link,
+#pageContent .pajinate .page_navigation .next_link,
+#pageContent .pajinate .page_navigation .last_link{
+	background: #fef4e8;
+	border: 1px solid #c7b299;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	padding:0 4px;
+	text-decoration:none;
+}
+#pageContent .pajinate .page_navigation .first_link:hover,
+#pageContent .pajinate .page_navigation .previous_link:hover,
+#pageContent .pajinate .page_navigation .next_link:hover,
+#pageContent .pajinate .page_navigation .last_link:hover{
+	background: #534741;
+	border: 1px solid #362f2d;
+	color:#ffffff;
+}
+
+
+	.pajinate .active_page {
+		font-weight:bold;
+		font-size:14px;
+	}
+
+
+/* ----------------------------------- Form Styles ------------------------------- */
+
+fieldset{
+	border:1px solid #998675;
+	background-color:#fef4e8;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	padding:0 16px 6px 16px;
+	margin:16px 0;
+}
+#primaryContent fieldset.submitButtons{
+	padding:16px;
+	text-align:center;
+}
+#primaryContent fieldset p{
+ 	color:#534741;
+}
+#primaryContent fieldset label{
+	color:#534741;
+	display:block;
+	font-weight:bold;
+	line-height:16px;
+}
+#primaryContent input[type=text], #primaryContent input[type=password]{
+	border:1px solid #998675;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	color:#534741;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding:4px;
+	width:98%;
+}
+#primaryContent select{
+	border:1px solid #998675;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	color: #362f2d;
+}
+#primaryContent textarea{
+	border:1px solid #998675;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	color:#534741;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	max-width:656px;
+	padding:4px;
+	width:98%;
+}
+
+#pageContent .content fieldset ol{
+	margin:0;
+}
+
+#pageContent .design_checklist{/* overrides default Ektron styling */
+	background-image:none;
+	padding:inherit;
+}
+
+#pageContent fieldset .design_list_horizontal, #pageContent fieldset .design_list_vertical{ /* overrides default Ektron styling */
+	list-style-type:none;
+	border:1px solid #fef4e8; 
+	list-style-image:none;
+	margin:0;
+	padding:0;
+}
+#primaryContent .design_list_horizontal label, #primaryContent .design_list_vertical label {
+	display:inline;
+	font-size: 12px;
+	font-weight:normal;
+	margin:0 0 0 0;
+	line-height:16px;
+}
+body .design_validation_failed{
+	border: 1px solid #aa0000 !important;
+}
+input.design_validation_failed, ol.design_validation_failed{
+	background: url(/_commonImages/PageBuilder/form_designValidationFailed_background.png)#fff8f8;
+	border-radius: 2px 2px 2px 2px;
+}
+ol.design_validation_failed{
+	padding:-1px;
+}
+
+#primaryContent .formDirections{
+	color:#736357;
+	font-size: 11px;
+	line-height:15px;
+}
+a.design_view_button:link{ /* hides those ridiculous sunglassed in the fieldset legend. Thanks Ektron. */
+	display:none;
+}
+fieldset legend{
+	color: #7a0711;
+	display:block;
+	font-size:20px;
+	line-height:100%;
+	padding:4px;
+	margin-left:-4px; /* fixes left margin alignment */
+}
+
+
+/* ------------------------------ News for STM and A+S --------------------------- */
+
+
+.newsCollectionWrapper{
+	padding-top:32px
+}
+.newsWrapper{
+	clear:both;
+	padding-bottom:16px;
+	float:left;
+}
+#pageContent .news p{
+	font-size:13px;
+}
+.news a{
+	display:block;
+	font-weight:bold;
+}
+.news .newsImage{
+	border:1px solid #534741;
+	float:left;
+	margin-right:12px;
+	padding:4px;
+}
+.news .newsImage img{
+	float:left;
+}
+.stm_news-events .CommentsList, .stm_news-events .ekleavecomment{
+	display:none;
+}
+
+
+/* ----------------------------------- Alert Pages ------------------------------- */
+.alert #pageContentWrapper{ 
+	padding:32px 0 32px 0;
+}
+.alert #accessoryContent{ margin-top:64px; }
+.alert #accessoryContent a{ color:#7a0711; }
+
+body.alert{
+	border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+/* ----------------------------------- User Overrides ------------------------------- */
+/* Fix problems created by content editors. */
+font{ color:#362f26; } /* control for customized text colors */
+.content{ color:#362f26; } /* control for random text not in <p> tags */
+u{ text-decoration:none; } /* control for underlined text that'll be confused with links */
+h2 strong, h3 strong{ font-weight:normal; } /* control for extra bolded headers */
+
+/* ----------------------------------- User Overrides ------------------------------- */
+/* Fix problems created by Ektron. */
+.ektdmsiframe {
+	height:890px;
+}
+body div.PBViewing{
+	float:none; !important
+}

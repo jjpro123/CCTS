@@ -1,0 +1,294 @@
+@charset "utf-8";
+/* *********************************************************
+
+Designed by Jason Beard: beardj@seattleu.edu
+Created December 2011
+Special styles that override/complement sty;es noted in level3.css. Used for a few sites only.
+
+Updated 12/6/11 by Jason 
+-added library styles for catalog search
+Updated 4/30/12 by David
+-removed temporary styles, hiding alert messages
+Updated 10/30/12 by Jason
+-Added global nav hide for WRRCEA conference.
+Updated 5/13/13 by Jason
+-Added styles for marcom logo lists
+Updated 1/9/14 by Jason
+-Added styles for homecoming
+Updated 2/11/14 by Jason
+-Added styles for Unionization effort
+Updated 2/24/14 by Jason
+-Added styles for Grad Admissions TargetX iframe override
+
+***********************************************************/
+
+/* ================================= Library ==================================*/
+
+#librarySearchTool {
+	background-color:#E3D6C6;
+	border: 1px solid #736357;
+	padding-bottom: 32px;
+	margin-bottom:15px;
+}
+#librarySearchTool h3{ /* titles inside box */
+	color:#534741;
+	margin:8px 0;
+}
+#primaryContent #librarySearchTool ul { /* wraps search tabs */
+	display:block;
+	overflow: hidden;
+	height: 32px;
+	list-style-image:none;
+	background: url(/library/images/librarySearchTool_ul_background.png) no-repeat center;
+	margin:0;
+}
+
+#librarySearchTool li {
+	float:left;
+	list-style:none;
+	margin-left:4px;
+}
+#librarySearchTool li span {
+	color: #ffffff;
+	display:block;
+	font-size: 14px;
+	line-height: 14px;
+	padding:9px 12px;
+	text-decoration:none;
+	cursor:pointer;
+}
+#librarySearchTool .highlight{ /* adds 'tab' left*/
+	background: url(/library/images/librarySearchTool_highlight-background.png) top left no-repeat;
+}
+#librarySearchTool .highlight span{  /* adds 'tab' right*/
+	background: url(/library/images/librarySearchTool_highlight_span-background.png) top right no-repeat;
+	color:#362f2d;
+}
+#librarySearchTool .hover{ 
+	background: url(/library/images/librarySearchTool_highlight_hover-background.png) top center repeat-x;
+}
+
+
+#librarySearchTool .DefaultSearchFormWrapper {
+	margin:0 8px 0 8px;
+}
+#librarySearchTool .SearchBox, #librarySearchTool #librarySearch {
+	height: auto !important;
+	width: 320px; /* 346(3col) - 2 8px margins - 2 5px padding */
+	border: 1px solid #cccccc;
+	font-size: 16px;
+	padding: 4px;
+	color: #362f2d;
+}
+#librarySearchTool .SubmitSearch {
+	height: 30px;
+	width: 110px;
+	margin: 5px 0;
+}
+#librarySearchTool p {
+	margin-left:8px;
+}
+
+/* ================================= WRRCEA ==================================*/
+/* SU sponsonsored conference in October 2013. Managed by College of Education (Amy Hitchock, Amy Rose and Megan Otis) */
+.wrrcea #globalNavigation{ display:none; }
+
+
+/* ================================= Marcom ==================================
+/* make the logo lists prettier: no bullets and bigger spacing */
+.marcom_brand_university-marks #primaryContentWrapper ul,
+.marcom_brand_college-marks #primaryContentWrapper ul,
+.marcom_brand_spirit-marks #primaryContentWrapper ul {
+	list-style-image:none;
+	margin-left:0;
+}
+.marcom_brand_university-marks #primaryContentWrapper h2,
+.marcom_brand_college-marks #primaryContentWrapper h2,
+.marcom_brand_spirit-marks #primaryContentWrapper h2{
+	padding: 24px 0 4px 0;
+}
+
+/* ================================= GPA Calculator ==================================*/
+
+ #primaryContentWrapper #primaryContent .gpa-calc input[type="text"]
+{
+	width:32px;
+	/*border:5px solid #0C6;*/
+}
+ /*#primaryContentWrapper #primaryContent .gpa-calc table
+ {
+	 width:5000px;
+	 padding:5000px;
+	 margin:5px;
+	 border:1px solid #000;
+ }*/
+ 
+#primaryContentWrapper #primaryContent .gpa-calc th, #primaryContentWrapper #primaryContent .gpa-calc td {
+	margin:0;
+	padding:8px;
+	text-align:center;
+
+}
+#primaryContentWrapper #primaryContent .gpa-calc{
+ padding:5px;
+ margin:10px;
+}
+
+/* ================================= Board of Trustees ==================================*/
+
+.trustees_members #primaryContentWrapper #primaryContent .staffBioBox .staffBioPhoto{
+	max-width: 144px;
+}
+
+/* ================================= Christmas 2013 ==================================
+Added 12/17/14 by Jason */
+
+.christmas2013 #pagetemplateWrapper{
+	background-image:url(/_commonImages/christmas-vid-BG3.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	padding-bottom:100px;
+}
+.christmas2013 #headerWrapper{
+	margin-bottom:0;
+}
+.christmas2013 #videoWrapper{
+	margin:30px auto;
+}
+.christmas2013 #videoWrapper iframe{
+	margin:auto auto;
+	border:10px solid #ffffff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	vertical-align:bottom;
+}
+.christmas2013 #theMessage{
+	border-top:0;
+}
+.christmas2013 #shareLinks{
+	text-align:right;
+	background: #ffffff;
+	border:10px solid #ffffff;
+	border-bottom:0;
+	width: 853px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.christmas2013 #globalNavigation,
+.christmas2013 #footerWrapper,
+.christmas2013 #footerCopyrightAndLinksWrapper{
+	display:none;
+}
+
+/* ================================= Homecoming ================================== */
+
+.homecoming_alumnischedule .dualColumn, .homecoming_studentschedule .dualColumn{
+	clear:both;
+	padding-top:15px;
+}
+.homecoming_alumnischedule .dualColumn img, .homecoming_studentschedule .dualColumn img{
+	width: 212px;
+	height: 141px;
+}
+.homecoming_alumnischedule .column1, .homecoming_studentschedule .column1 {
+	width:30%;
+}
+.homecoming_alumnischedule .column2, .homecoming_studentschedule .column2 {
+	width:70%;
+}
+
+
+
+/*  ================================= Presidents Report  ================================= */
+.issuuembed span{ /* hides annoying issuu links */
+	display:none;
+}
+
+
+
+
+
+
+
+
+/*  ================================= all these are temp until level3 is updated  ================================= */
+
+/* -------------------------- Buttons -------------------------- */
+#pageContent .btn-attention {
+	background-color: #940914;
+    border-color: #7a0711;
+    color: #ffffff;
+	text-decoration:none;
+}
+#pageContent .btn-attention:hover, #pageContent .btn-attention:focus {
+	background-color: #7a0711;
+    border-color: #61060d;
+    color: #ffffff;
+}
+#pageContent .btn-plain {
+    background-color: #998675;
+    border-color: #736357;
+    color: #FFFFFF;
+	text-decoration:none;
+}
+#pageContent .btn-plain:hover, #pageContent .btn-plain:focus {
+	background-color: #736357;
+    border-color: #362f2d;
+    color: #ffffff;
+}
+
+
+
+/* -------------------------- New ektron overrides -------------------------- */
+#pageContent fieldset p:first-child {
+	margin-top:1.3em;
+}
+
+#pageContent .content ol, #sitewideContent .content ol { /* adding .content gets around Ektron-added UL surrounding everything */
+	color:#362f2d;
+	font-family: 'Lato', sans-serif;
+	font-weight:400;
+	list-style-type:decimal;
+	margin-bottom: 15px;
+    margin-left: 15px;
+}
+#pageContent .content ol ol, 
+#pageContent .content ol ul, 
+#pageContent .content ul ul, 
+#pageContent .content ul ol{
+	margin-bottom:0;
+} 
+
+.LoginContainer{
+	margin-bottom:30px;
+}
+
+
+/*  ================================= Unionization Effort  ================================= */
+.unionization-effort .EktronEditorsMenuMarker{ /* removes the silver bullet from contingent faculty */
+	display:none !important;
+}
+.unionization-effort div.dropzone div.PBViewing ul.columnwidgetlist{
+	list-style-type:none !important;
+}
+
+/*  ================================= Grad admissions forms - TargetX  ================================= */
+.graduate-admissions_request-information #primaryContentWrapper{
+	width: 100%; /* make this act like a 12-column conainer instead of 8 */
+}
+.graduate-admissions_request-information_followup #primaryContentWrapper{
+	width: 100%; /* make this act like a 12-column conainer instead of 8 */
+}
+
+.graduate-admissions_application-update-form #primaryContentWrapper{
+	width: 100%; /* make this act like a 12-column conainer instead of 8 */
+}
+
+/*  ================================= Undergrad admissions forms - TargetX  ================================= */
+.undergraduate-admissions_request-information #primaryContentWrapper{
+	width: 100%; /* make this act like a 12-column conainer instead of 8 */
+}
+.undergraduate-admissions_request-information_followup #primaryContentWrapper{
+	width: 100%; /* make this act like a 12-column conainer instead of 8 */
+}

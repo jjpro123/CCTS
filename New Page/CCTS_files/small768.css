@@ -1,0 +1,302 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media screen and (max-width: 767px){
+
+#headerWrapper {
+	box-shadow:none;
+	height:auto;
+	background-image:none;
+	background-color:#940914;
+	border-bottom:1px solid #fff;
+	margin:0 auto;
+}
+#logo {
+	height:auto;
+	
+}
+#logo img {
+	height:auto;
+	padding:0 0 0 15px;
+}
+#globalNavigationCollapse{ 
+	background-color:#7a0711;
+}
+
+#globalNavigation .glyphicon{
+	color:#ffffff; 
+	font-size:2em;
+	font-size-adjust:inherit;
+}
+
+body #header #search #q{ /* text box */
+	margin-bottom:15px;
+	margin-right:.2em
+}
+body #header #search #sa{ /* submit button */
+	margin-bottom:15px;
+}
+
+
+
+#headerWrapper #globalNavigation #topLevel li{
+	width:50%;
+}
+
+#headerWrapper #globalNavigation #topLevel li a{ 
+	color:#ffffff;
+	padding:15px;
+}
+#headerWrapper #globalNavigation #topLevel li a:focus, 
+#headerWrapper #globalNavigation #topLevel li a:hover{ 
+	background:#950914;
+	border-radius: 5px;	
+	color:#ffffff;
+	text-shadow:0 0 2px #333333;
+}
+#headerWrapper #globalNavigation #topLevel li a.hoverAction{  /* when the menu is expanded */
+		background:none; 
+		border-radius: inherit; -moz-border-radius: inherit; -webkit-border-radius: inherit;/* [qwe123] */
+		color:#ffffff;
+		text-shadow:none;
+		text-decoration:none;
+	}
+#globalNavigation{
+	position: absolute;
+	right: 0;
+	top:0;
+	z-index:3900;
+}
+#globalNavigation .SecondLevelWrapper{ /* this should really be turned off in the .js. not just hidden here */
+	display:none !important;
+}
+#search{
+	margin-left:15px;
+	padding:15px;
+	position:inherit; 
+}
+
+
+
+
+
+
+
+
+
+
+
+body #sectionBannerWrapper #sectionBannerSecondWrapper, 
+body #sectionLandingBannerWrapper #sectionBannerSecondWrapper{
+	border-top-left-radius: 0;	
+	border-top-right-radius: 0;	
+	top:0;
+}
+
+
+body #pagetemplateBody{
+	margin-bottom:0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+
+body #accessoryContent{
+	padding-right:0;
+}
+
+
+
+body #siteNavigationWrapper{
+	margin-top:0;
+}
+
+
+body #siteNavigation .navbar-collapse{
+	padding-left: 0;
+	padding-right: 0;
+	max-height:inherit;
+}
+body #siteNavigation .navbar-collapse .in{
+	overflow-y:visible;
+	overflow:visible
+}
+
+body #siteNavigation .navbar-toggle .icon-bar{
+	background:white;
+}
+
+#sectionBanner .sectionTitle, #sectionLandingBanner .sectionTitle {
+	text-shadow: none;
+}
+
+
+body #siteNavigation #menu .TopLevelItemSelected>span, /* selected item on top level only */ 
+body #siteNavigation #menu .ItemSelected>span {  /* all other selected items */
+	border-top: 1px solid #786E68;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+	font-weight:700;
+	left:0;/* padding: 10px;
+*/}
+body #siteNavigation #menu .TopLevelItemSelected>span>a, /* selected item on top level only */ 
+body #siteNavigation #menu .ItemSelected>span>a { /* all other selected items */
+	background:none;/* the bottom */
+}
+
+body #siteNavigation #menu .TopLevelItemSelected>span>a>span, /* selected item on top level only */ 
+body #siteNavigation #menu .ItemSelected>span>a>span { /* all other selected items */
+	background:none;/* the top */
+	color:#ffffff;
+	padding: 5px 16px 5px 8px;
+	margin:0;/*padding:10px 36px 10px 24px;*/
+}
+body span .glyphicon .glyphicon-forward {
+	content: "";
+	cursor: pointer;
+	display: block;
+	height: 24px;
+	left: 80%;
+	position: absolute;
+	top: 11px;
+	width: 38px;
+}
+body #siteNavigation {
+	box-shadow: none;
+}
+body #siteNavigation #siteNavigationTitleWrapper {
+	background-image:none;
+}
+body #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle {
+	background-color:#362f2d;
+	padding:0;
+}
+body #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle a:after {
+	content: ' Menu';
+}
+body #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle button{
+	background:transparent;
+	display:block;
+	margin-top:0;
+	margin-bottom:0;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+}
+body #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle button .glyphicon{
+	float:right;
+}
+
+
+body #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle span a,
+body #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle span a:visited{
+	color:#ffffff;
+	padding:10px;
+}
+body #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle span a:hover,
+body #siteNavigation #siteNavigationTitleWrapper #siteNavigationTitle span a:focus{
+	color:#e3d6c6;
+}
+
+body #siteNavigation #menu .glyphicon{
+	color:#ffffff;
+}
+body #siteNavigation #menu li a { /* All links in the sitenav menu */
+	background-color:#534741;
+	padding:10px;
+	color:#ffffff;
+	xborder-top:1px solid #786e68;
+}
+body #siteNavigation #menu li ul li a { /* all links Level2 items and links all Level3 items */
+	background-color:#736357;
+	padding:10px;
+	color:#fff;
+	xborder-top:1px solid #786e68;
+}
+body #siteNavigation #menu li a:hover,
+body #siteNavigation #menu li a:focus{
+	color: #362f2d;
+}
+body #siteNavigation #menu li ul li ul li a {
+	background-color:#998675;
+	padding:10px;
+	color:#fff;
+	xborder-top:1px solid #e3d6c6;
+}
+body #siteNavigation #menu li a .MenuNotSelected .secondLevel {
+	background-color:#Cc99cC;
+}
+
+body #siteNavigation #menu .TopLevelItemSelected > span,
+body #siteNavigation #menu .ItemSelected > span{
+	width:inherit;
+}
+#siteNavigation #menu .TopLevelItemSelected > span:before, #siteNavigation #menu .ItemSelected > span:before,
+#siteNavigation #menu .TopLevelItemSelected > span:after, #siteNavigation #menu .ItemSelected > span:after{
+	display:none;
+}
+
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all 0.25s ease-out;
+    -moz-transition: all 0.25s ease-out;
+    transition: all 0.25s ease-out;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+
+
+ #footerWrapper {
+	background-color:#7a0711;
+	background-image:none;
+	clear: both;
+    color: #FFFFFF;
+    height: auto;
+    position: relative;
+  }
+ #footer  {
+	padding:10px 10px 45px 10px;
+		/*margin:50px;*/
+  }
+#footerInner {
+	margin:0 auto;
+	width:auto;
+	text-align:center;
+	
+  }
+
+#footerCopyrightAndLinksWrapper {
+	background-image:none;
+	xmargin-top:5px;
+}
+}
